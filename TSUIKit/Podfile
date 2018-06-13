@@ -1,0 +1,13 @@
+
+
+platform :ios, ‘9.0’
+
+use_frameworks!
+
+target 'TSUIKit' do
+
+# pod 'TFKit',:git=>'/Users/threestonewang/Desktop/TFKit'
+pod 'TSUIKit',:git=>'https://github.com/StoneStoneStoneWang/TSUIKit.git'
+
+
+end
