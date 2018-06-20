@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "TSReqKit"
-s.version      = "0.0.1"
+s.version      = "1.0.1"
 s.summary      = "A Lib For UI."
 s.description  = <<-DESC
 TSUIKit 是一个网络请求封装

@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+Call.h"
+#import "UIViewController+Orientation.h"
+#import "UIViewController+StatusBar.h"
 
 @interface TSBaseViewController : UIViewController
 
