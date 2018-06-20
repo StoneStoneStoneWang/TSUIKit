@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-s.name         = "TSReqKit"
+s.name         = "SUIKit"
 s.version      = "1.0.1"
 s.summary      = "A Lib For UI."
 s.description  = <<-DESC
