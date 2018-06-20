@@ -5,4 +5,4 @@ TSUIKit
 
 ## Pod
 
-pod 'TSUIKit',:git=>'https://github.com/StoneStoneStoneWang/TSUIKit.git'
+pod 'TS_UIKit',:git=>'https://github.com/StoneStoneStoneWang/TSUIKit.git'
