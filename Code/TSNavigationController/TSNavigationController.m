@@ -8,11 +8,17 @@
 
 #import "TSNavigationController.h"
 
-@interface TSNavigationController ()
+@interface TSNavigationController () <UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end
 
 @implementation TSNavigationController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.interactivePopGestureRecognizer.delegate = self;
+}
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
@@ -22,4 +28,10 @@
     }
     [super pushViewController:viewController animated:animated];
 }
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    
+    return self.viewControllers.count > 1;
+}
+
 @end
