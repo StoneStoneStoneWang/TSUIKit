@@ -7,123 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DBF98C9C9731E726569D6447E72136E /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A345B5AC134A19692BBF974BD6434955 /* TSBaseViewController.m */; };
-		156D3E72439878E17D299DF8058A151C /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE40A9F6C5E14BD630A97C767E991CE /* UIViewController+StatusBar.m */; };
-		28383DAF3B48275733D327F7B0E180C0 /* UIViewController+Call.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B156884E2053DFFEF3BF586072609AB /* UIViewController+Call.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D3FB661DD955ABBDCAECF73EF9F7CD4 /* TS_UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B274250D4EB69C7B3859D221D68AC4D0 /* TS_UIKit-dummy.m */; };
-		38B38105F16FFD0810678DA4954DC834 /* UIViewController+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = F623D72AC38C7BBFC2D9D7B65A04BF32 /* UIViewController+Call.m */; };
-		4DE0BF1EFD7E2088882244CC1547DD0E /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E18E3C5A90E4051A1935EC24BDF7B0 /* UIViewController+Orientation.m */; };
-		6A5CDBD9C85BBFBBA2D695FFFA0DD48F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		6B61136922680A26643525A5FD5B92D5 /* TS_UIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8E03AF34770F0980FFAC713DE354E3 /* TS_UIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7784D662B8D12C9C466221907304C649 /* UIViewController+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63ACECABE046CDE7D554E1C03D04922F /* UIViewController+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78D2E13850B9DA88DE51A4F559D758F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		8051223BBDC04355C7640905217FFA4B /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816505C0C00FDD7737CA8CB5B135AD6 /* UINavigationController+Orientation.m */; };
-		864FD78918EF41B42FCA4478EE013FC5 /* Pods-TSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091CF2301A38B51219265A95CCC84810 /* Pods-TSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FC0F0F93FF7632550A9A9134D5C9DC5 /* TSBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCF6E295F0DD9B3D58F06C582E5FCAE /* TSBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99FA7388BF267AC70E4AED090BCF22AD /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC44C7318BBA047D455DFBAB12A9B42 /* UITabBarController+Orientation.m */; };
-		9C9B3CB306FF5D7C08F461F0041D7E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		AB40C170D8EBD0B917BE87052903A7D0 /* UINavigationController+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = C05E0C1A117B93065D82C6059342ACDC /* UINavigationController+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C91E5FBB9020BFDCE3F36C83551B6D17 /* UIViewController+StatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F090025B0A612EC6E4CECF51FE236EF7 /* UIViewController+StatusBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD173771C76922618F044F3E558CA759 /* UITabBarController+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = C0DF177F810DD50DF64A130964EE6112 /* UITabBarController+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFC4A8FF3D82BA71B1448A86349CAF24 /* Pods-TSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2042996539CBFAE3A23F989230442A37 /* Pods-TSUIKit-dummy.m */; };
+		1D94EBB211EA7DDABE4206485F54146B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2033FEAA2CDA5D4446BC307C82B41688 /* Pods-TSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091CF2301A38B51219265A95CCC84810 /* Pods-TSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9ECB2166EF3933712912BA771212D1C /* Pods-TSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2042996539CBFAE3A23F989230442A37 /* Pods-TSUIKit-dummy.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AF32A3E9776BE44BE48EE4DB32CA49C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0F403BACB1ED7EFFDF3B1DCB55109F8;
-			remoteInfo = TS_UIKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		091CF2301A38B51219265A95CCC84810 /* Pods-TSUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSUIKit-umbrella.h"; sourceTree = "<group>"; };
-		13F56A896FA519F5BF5ADBDEE4716C87 /* Pods_TSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSUIKit.framework; path = "Pods-TSUIKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BE40A9F6C5E14BD630A97C767E991CE /* UIViewController+StatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+StatusBar.m"; path = "Code/UIViewController+StatusBar/UIViewController+StatusBar.m"; sourceTree = "<group>"; };
 		2042996539CBFAE3A23F989230442A37 /* Pods-TSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSUIKit-dummy.m"; sourceTree = "<group>"; };
-		21460B5BAC124BE07B60930FA0532FB4 /* TS_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TS_UIKit.framework; path = TS_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B4B68EC516D61F7707258D61D5354E4 /* TS_UIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TS_UIKit.modulemap; sourceTree = "<group>"; };
-		3816505C0C00FDD7737CA8CB5B135AD6 /* UINavigationController+Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Orientation.m"; path = "Code/UIViewController+Orientation/UINavigationController+Orientation.m"; sourceTree = "<group>"; };
 		42E1041D4712BCC99357B5E889066B5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DF304D1C44F59A75CEED164805DDB0F /* TS_UIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TS_UIKit.xcconfig; sourceTree = "<group>"; };
-		5B156884E2053DFFEF3BF586072609AB /* UIViewController+Call.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Call.h"; path = "Code/UIViewController+Call/UIViewController+Call.h"; sourceTree = "<group>"; };
-		63ACECABE046CDE7D554E1C03D04922F /* UIViewController+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Orientation.h"; path = "Code/UIViewController+Orientation/UIViewController+Orientation.h"; sourceTree = "<group>"; };
-		63BA879A9C455BE0C3D035F8C42CB2B2 /* TS_UIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TS_UIKit-prefix.pch"; sourceTree = "<group>"; };
-		72E18E3C5A90E4051A1935EC24BDF7B0 /* UIViewController+Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Orientation.m"; path = "Code/UIViewController+Orientation/UIViewController+Orientation.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1519DC488502432CDAAF1CA318C884B /* Pods-TSUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSUIKit.debug.xcconfig"; sourceTree = "<group>"; };
-		A345B5AC134A19692BBF974BD6434955 /* TSBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSBaseViewController.m; path = Code/VC/TSBaseViewController.m; sourceTree = "<group>"; };
 		A958DD91B54BE0C15049BB68F19290BB /* Pods-TSUIKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSUIKit-resources.sh"; sourceTree = "<group>"; };
-		B274250D4EB69C7B3859D221D68AC4D0 /* TS_UIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TS_UIKit-dummy.m"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BBCF6E295F0DD9B3D58F06C582E5FCAE /* TSBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSBaseViewController.h; path = Code/VC/TSBaseViewController.h; sourceTree = "<group>"; };
-		C05E0C1A117B93065D82C6059342ACDC /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Orientation.h"; path = "Code/UIViewController+Orientation/UINavigationController+Orientation.h"; sourceTree = "<group>"; };
+		B503FE372756DA1653D43FF9CEAD66C7 /* Pods_TSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSUIKit.framework; path = "Pods-TSUIKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0923B25A5FEDFBC30F1290D7BD4927D /* Pods-TSUIKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSUIKit-acknowledgements.plist"; sourceTree = "<group>"; };
-		C0DF177F810DD50DF64A130964EE6112 /* UITabBarController+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+Orientation.h"; path = "Code/UIViewController+Orientation/UITabBarController+Orientation.h"; sourceTree = "<group>"; };
 		C33690C62815BE7925F50A78EF393E0F /* Pods-TSUIKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSUIKit-frameworks.sh"; sourceTree = "<group>"; };
-		CA8E03AF34770F0980FFAC713DE354E3 /* TS_UIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TS_UIKit-umbrella.h"; sourceTree = "<group>"; };
-		CC287296E7DF668703C4EF05A46F25F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E3CF51ED900126CC748E89E0226963B4 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		ECF746FD9F5724781342300B8BD3DD42 /* Pods-TSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TSUIKit.modulemap"; sourceTree = "<group>"; };
-		EFC44C7318BBA047D455DFBAB12A9B42 /* UITabBarController+Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+Orientation.m"; path = "Code/UIViewController+Orientation/UITabBarController+Orientation.m"; sourceTree = "<group>"; };
-		F090025B0A612EC6E4CECF51FE236EF7 /* UIViewController+StatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+StatusBar.h"; path = "Code/UIViewController+StatusBar/UIViewController+StatusBar.h"; sourceTree = "<group>"; };
-		F623D72AC38C7BBFC2D9D7B65A04BF32 /* UIViewController+Call.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Call.m"; path = "Code/UIViewController+Call/UIViewController+Call.m"; sourceTree = "<group>"; };
 		FF7119E8ACF36FA7AD0737687F3D5BCE /* Pods-TSUIKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSUIKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE00A14010A149890CEC5CAB5DB9CA8F /* Frameworks */ = {
+		70F7F04DB2D0ADAF64C5185FA001E4F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78D2E13850B9DA88DE51A4F559D758F3 /* Foundation.framework in Frameworks */,
-				9C9B3CB306FF5D7C08F461F0041D7E47 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB0FD4A1CE25BE499E49E86AA85D8BB8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A5CDBD9C85BBFBBA2D695FFFA0DD48F /* Foundation.framework in Frameworks */,
+				1D94EBB211EA7DDABE4206485F54146B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02AEC4297F150DDA10CE5E3733499F2D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				040D3BCC36A35A92B11DD8B63631D6CB /* TS_UIKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		040D3BCC36A35A92B11DD8B63631D6CB /* TS_UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				BBCF6E295F0DD9B3D58F06C582E5FCAE /* TSBaseViewController.h */,
-				A345B5AC134A19692BBF974BD6434955 /* TSBaseViewController.m */,
-				C05E0C1A117B93065D82C6059342ACDC /* UINavigationController+Orientation.h */,
-				3816505C0C00FDD7737CA8CB5B135AD6 /* UINavigationController+Orientation.m */,
-				C0DF177F810DD50DF64A130964EE6112 /* UITabBarController+Orientation.h */,
-				EFC44C7318BBA047D455DFBAB12A9B42 /* UITabBarController+Orientation.m */,
-				5B156884E2053DFFEF3BF586072609AB /* UIViewController+Call.h */,
-				F623D72AC38C7BBFC2D9D7B65A04BF32 /* UIViewController+Call.m */,
-				63ACECABE046CDE7D554E1C03D04922F /* UIViewController+Orientation.h */,
-				72E18E3C5A90E4051A1935EC24BDF7B0 /* UIViewController+Orientation.m */,
-				F090025B0A612EC6E4CECF51FE236EF7 /* UIViewController+StatusBar.h */,
-				1BE40A9F6C5E14BD630A97C767E991CE /* UIViewController+StatusBar.m */,
-				329EBCEFB0F08E2953C4C635655E3D0B /* Support Files */,
-			);
-			name = TS_UIKit;
-			path = TS_UIKit;
-			sourceTree = "<group>";
-		};
 		11F015E92C6ACF967FC28BE54FD72105 /* Pods-TSUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,55 +58,30 @@
 			path = "Target Support Files/Pods-TSUIKit";
 			sourceTree = "<group>";
 		};
-		329EBCEFB0F08E2953C4C635655E3D0B /* Support Files */ = {
+		61024B250801AED25CC7407C9E5D9AEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC287296E7DF668703C4EF05A46F25F1 /* Info.plist */,
-				2B4B68EC516D61F7707258D61D5354E4 /* TS_UIKit.modulemap */,
-				4DF304D1C44F59A75CEED164805DDB0F /* TS_UIKit.xcconfig */,
-				B274250D4EB69C7B3859D221D68AC4D0 /* TS_UIKit-dummy.m */,
-				63BA879A9C455BE0C3D035F8C42CB2B2 /* TS_UIKit-prefix.pch */,
-				CA8E03AF34770F0980FFAC713DE354E3 /* TS_UIKit-umbrella.h */,
+				B503FE372756DA1653D43FF9CEAD66C7 /* Pods_TSUIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TS_UIKit";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				02AEC4297F150DDA10CE5E3733499F2D /* Pods */,
-				A877A2ADDF077053879BBB42078E4329 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				61024B250801AED25CC7407C9E5D9AEC /* Products */,
 				C7BDBAF0A80C2C0090D8FE332559142D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A877A2ADDF077053879BBB42078E4329 /* Products */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13F56A896FA519F5BF5ADBDEE4716C87 /* Pods_TSUIKit.framework */,
-				21460B5BAC124BE07B60930FA0532FB4 /* TS_UIKit.framework */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C7BDBAF0A80C2C0090D8FE332559142D /* Targets Support Files */ = {
@@ -201,67 +92,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A2CEAAFC8ED4284F35F63954795D6D6 /* Headers */ = {
+		E8BCE600B6B1CA9B4306ADDFFA7EEDEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864FD78918EF41B42FCA4478EE013FC5 /* Pods-TSUIKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6861521ADC61A96F987B7B6E7EC09F8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B61136922680A26643525A5FD5B92D5 /* TS_UIKit-umbrella.h in Headers */,
-				8FC0F0F93FF7632550A9A9134D5C9DC5 /* TSBaseViewController.h in Headers */,
-				AB40C170D8EBD0B917BE87052903A7D0 /* UINavigationController+Orientation.h in Headers */,
-				DD173771C76922618F044F3E558CA759 /* UITabBarController+Orientation.h in Headers */,
-				28383DAF3B48275733D327F7B0E180C0 /* UIViewController+Call.h in Headers */,
-				7784D662B8D12C9C466221907304C649 /* UIViewController+Orientation.h in Headers */,
-				C91E5FBB9020BFDCE3F36C83551B6D17 /* UIViewController+StatusBar.h in Headers */,
+				2033FEAA2CDA5D4446BC307C82B41688 /* Pods-TSUIKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		34878263912CEA0CC2A84F19850F9E02 /* Pods-TSUIKit */ = {
+		9A0330722BCF2DC1FA8F19084C4959E0 /* Pods-TSUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4403E50A8B5BCF00120B0AF7C35BC3A /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */;
+			buildConfigurationList = 71A7BF770D41C7B0287DA5594E2FC09E /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */;
 			buildPhases = (
-				213BE215B00859489D4C848E16384C7F /* Sources */,
-				FB0FD4A1CE25BE499E49E86AA85D8BB8 /* Frameworks */,
-				1A2CEAAFC8ED4284F35F63954795D6D6 /* Headers */,
+				8F31213DBCD8A9B99101C0EE91B1A343 /* Sources */,
+				70F7F04DB2D0ADAF64C5185FA001E4F8 /* Frameworks */,
+				E8BCE600B6B1CA9B4306ADDFFA7EEDEF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4712BBCA15D05149E55B3EFB6C5FBC35 /* PBXTargetDependency */,
 			);
 			name = "Pods-TSUIKit";
 			productName = "Pods-TSUIKit";
-			productReference = 13F56A896FA519F5BF5ADBDEE4716C87 /* Pods_TSUIKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C0F403BACB1ED7EFFDF3B1DCB55109F8 /* TS_UIKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9C260B88154C3AC2EA0AF57DB705828 /* Build configuration list for PBXNativeTarget "TS_UIKit" */;
-			buildPhases = (
-				8B7EAA79E585342550354892530EA0D5 /* Sources */,
-				BE00A14010A149890CEC5CAB5DB9CA8F /* Frameworks */,
-				B6861521ADC61A96F987B7B6E7EC09F8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TS_UIKit;
-			productName = TS_UIKit;
-			productReference = 21460B5BAC124BE07B60930FA0532FB4 /* TS_UIKit.framework */;
+			productReference = B503FE372756DA1653D43FF9CEAD66C7 /* Pods_TSUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -281,146 +148,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A877A2ADDF077053879BBB42078E4329 /* Products */;
+			productRefGroup = 61024B250801AED25CC7407C9E5D9AEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34878263912CEA0CC2A84F19850F9E02 /* Pods-TSUIKit */,
-				C0F403BACB1ED7EFFDF3B1DCB55109F8 /* TS_UIKit */,
+				9A0330722BCF2DC1FA8F19084C4959E0 /* Pods-TSUIKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		213BE215B00859489D4C848E16384C7F /* Sources */ = {
+		8F31213DBCD8A9B99101C0EE91B1A343 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC4A8FF3D82BA71B1448A86349CAF24 /* Pods-TSUIKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B7EAA79E585342550354892530EA0D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D3FB661DD955ABBDCAECF73EF9F7CD4 /* TS_UIKit-dummy.m in Sources */,
-				0DBF98C9C9731E726569D6447E72136E /* TSBaseViewController.m in Sources */,
-				8051223BBDC04355C7640905217FFA4B /* UINavigationController+Orientation.m in Sources */,
-				99FA7388BF267AC70E4AED090BCF22AD /* UITabBarController+Orientation.m in Sources */,
-				38B38105F16FFD0810678DA4954DC834 /* UIViewController+Call.m in Sources */,
-				4DE0BF1EFD7E2088882244CC1547DD0E /* UIViewController+Orientation.m in Sources */,
-				156D3E72439878E17D299DF8058A151C /* UIViewController+StatusBar.m in Sources */,
+				E9ECB2166EF3933712912BA771212D1C /* Pods-TSUIKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4712BBCA15D05149E55B3EFB6C5FBC35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TS_UIKit;
-			target = C0F403BACB1ED7EFFDF3B1DCB55109F8 /* TS_UIKit */;
-			targetProxy = AF32A3E9776BE44BE48EE4DB32CA49C1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		023008C0493F94753579AA113640AC9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1519DC488502432CDAAF1CA318C884B /* Pods-TSUIKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TSUIKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TSUIKit/Pods-TSUIKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TSUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		14A58F19E253D51CB5DA7233364D8F58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DF304D1C44F59A75CEED164805DDB0F /* TS_UIKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TS_UIKit/TS_UIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TS_UIKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TS_UIKit/TS_UIKit.modulemap";
-				PRODUCT_NAME = TS_UIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6CECB025488D7B078033D79503775DF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3CF51ED900126CC748E89E0226963B4 /* Pods-TSUIKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TSUIKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TSUIKit/Pods-TSUIKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TSUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,6 +221,39 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9CECB9BDE47FBF0B586706A58573FE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CF51ED900126CC748E89E0226963B4 /* Pods-TSUIKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSUIKit/Pods-TSUIKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -536,9 +317,9 @@
 			};
 			name = Debug;
 		};
-		BFBD7930831DC06F8162A57ECA5DAD34 /* Debug */ = {
+		C57F6A244B6975B2D3D112BD17263109 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DF304D1C44F59A75CEED164805DDB0F /* TS_UIKit.xcconfig */;
+			baseConfigurationReference = A1519DC488502432CDAAF1CA318C884B /* Pods-TSUIKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -549,16 +330,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TS_UIKit/TS_UIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TS_UIKit/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSUIKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TS_UIKit/TS_UIKit.modulemap";
-				PRODUCT_NAME = TS_UIKit;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSUIKit/Pods-TSUIKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSUIKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -577,20 +361,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4403E50A8B5BCF00120B0AF7C35BC3A /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */ = {
+		71A7BF770D41C7B0287DA5594E2FC09E /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				023008C0493F94753579AA113640AC9C /* Debug */,
-				6CECB025488D7B078033D79503775DF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9C260B88154C3AC2EA0AF57DB705828 /* Build configuration list for PBXNativeTarget "TS_UIKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFBD7930831DC06F8162A57ECA5DAD34 /* Debug */,
-				14A58F19E253D51CB5DA7233364D8F58 /* Release */,
+				C57F6A244B6975B2D3D112BD17263109 /* Debug */,
+				9CECB9BDE47FBF0B586706A58573FE3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

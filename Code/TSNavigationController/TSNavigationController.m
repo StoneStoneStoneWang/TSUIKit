@@ -7,7 +7,6 @@
 //
 
 #import "TSNavigationController.h"
-#import "UINavigationController+Orientation.h"
 
 @interface TSNavigationController ()
 

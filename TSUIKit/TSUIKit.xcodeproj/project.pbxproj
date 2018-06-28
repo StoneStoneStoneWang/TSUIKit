@@ -74,7 +74,7 @@
 		6CA172EA20D0C38900F2F339 /* TSUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA172EE20D0C38900F2F339 /* TSUIKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSUIKitUITests.m; sourceTree = "<group>"; };
 		6CA172F020D0C38900F2F339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CA172FC20D0C3E800F2F339 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6CA172FC20D0C3E800F2F339 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6CA1730220D0C49500F2F339 /* TSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseViewController.h; sourceTree = "<group>"; };
 		6CA1730320D0C49500F2F339 /* TSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseViewController.m; sourceTree = "<group>"; };
 		7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
