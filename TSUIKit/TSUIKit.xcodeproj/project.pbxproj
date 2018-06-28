@@ -12,6 +12,7 @@
 		6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */; };
 		6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034620D0E7290029AFAB /* UIViewController+Call.m */; };
 		6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */; };
+		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
 		6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CE20D0C38900F2F339 /* ViewController.m */; };
 		6CA172D220D0C38900F2F339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172D020D0C38900F2F339 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		6CA172EF20D0C38900F2F339 /* TSUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172EE20D0C38900F2F339 /* TSUIKitUITests.m */; };
 		6CA172FD20D0C3E800F2F339 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172FC20D0C3E800F2F339 /* Podfile */; };
 		6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1730320D0C49500F2F339 /* TSBaseViewController.m */; };
+		C900AEED28076A7ED45C36E2 /* Pods_TSUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A52963AD94FFA859695AF4A /* Pods_TSUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A52963AD94FFA859695AF4A /* Pods_TSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D52C4F6B86AA4D5AD70544 /* Pods-TSUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		6C4D033B20D0C72F0029AFAB /* UIViewController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
 		6C4D033C20D0C72F0029AFAB /* UIViewController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Orientation.m"; sourceTree = "<group>"; };
 		6C4D033E20D0C7620029AFAB /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Orientation.h"; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		6C4D034620D0E7290029AFAB /* UIViewController+Call.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Call.m"; sourceTree = "<group>"; };
 		6C4D034920D0E8A90029AFAB /* UIViewController+StatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StatusBar.h"; sourceTree = "<group>"; };
 		6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StatusBar.m"; sourceTree = "<group>"; };
+		6C9B3A5120E47221006A10B2 /* TSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
+		6C9B3A5220E47221006A10B2 /* TSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 		6CA172C720D0C38900F2F339 /* TSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA172CA20D0C38900F2F339 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CA172CB20D0C38900F2F339 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 		6CA172FC20D0C3E800F2F339 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		6CA1730220D0C49500F2F339 /* TSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseViewController.h; sourceTree = "<group>"; };
 		6CA1730320D0C49500F2F339 /* TSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseViewController.m; sourceTree = "<group>"; };
+		7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C900AEED28076A7ED45C36E2 /* Pods_TSUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +137,15 @@
 			path = "UIViewController+StatusBar";
 			sourceTree = "<group>";
 		};
+		6C9B3A5020E471E2006A10B2 /* TSNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				6C9B3A5120E47221006A10B2 /* TSNavigationController.h */,
+				6C9B3A5220E47221006A10B2 /* TSNavigationController.m */,
+			);
+			path = TSNavigationController;
+			sourceTree = "<group>";
+		};
 		6CA172BE20D0C38900F2F339 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +154,8 @@
 				6CA172E220D0C38900F2F339 /* TSUIKitTests */,
 				6CA172ED20D0C38900F2F339 /* TSUIKitUITests */,
 				6CA172C820D0C38900F2F339 /* Products */,
+				6CF466D76A8C2EDF1B7EB23D /* Pods */,
+				6E398D0845CD2613070D7364 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +207,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C9B3A5020E471E2006A10B2 /* TSNavigationController */,
 				6C4D034820D0E8910029AFAB /* UIViewController+StatusBar */,
 				6C4D034420D0E7160029AFAB /* UIViewController+Call */,
 				6C4D033720D0C6E80029AFAB /* UIViewController+Orientation */,
@@ -222,6 +242,23 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		6CF466D76A8C2EDF1B7EB23D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D52C4F6B86AA4D5AD70544 /* Pods-TSUIKit.debug.xcconfig */,
+				7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E398D0845CD2613070D7364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A52963AD94FFA859695AF4A /* Pods_TSUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CA172F320D0C38900F2F339 /* Build configuration list for PBXNativeTarget "TSUIKit" */;
 			buildPhases = (
+				8C8FE0668569598EBE5E0887 /* [CP] Check Pods Manifest.lock */,
 				6CA172C320D0C38900F2F339 /* Sources */,
 				6CA172C420D0C38900F2F339 /* Frameworks */,
 				6CA172C520D0C38900F2F339 /* Resources */,
+				FDCD3ADAC9B3681D00197445 /* [CP] Embed Pods Frameworks */,
+				56023824609BDC7FFA628106 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,6 +391,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56023824609BDC7FFA628106 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C8FE0668569598EBE5E0887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCD3ADAC9B3681D00197445 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TS_UIKit/TS_UIKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TS_UIKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CA172C320D0C38900F2F339 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -360,6 +454,7 @@
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
 				6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */,
 				6CA172DA20D0C38900F2F339 /* main.m in Sources */,
+				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
 				6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
 				6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */,
@@ -525,6 +620,7 @@
 		};
 		6CA172F420D0C38900F2F339 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D52C4F6B86AA4D5AD70544 /* Pods-TSUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +635,7 @@
 		};
 		6CA172F520D0C38900F2F339 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

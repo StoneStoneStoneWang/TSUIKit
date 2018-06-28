@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
 s.name         = "TS_UIKit"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "A Lib For UI."
 s.description  = <<-DESC
-TSUIKit 是一个网络请求封装
+TSUIKit 是一个UI基类
 DESC
 
 s.homepage     = "https://github.com/StoneStoneStoneWang/TSUIKit"
