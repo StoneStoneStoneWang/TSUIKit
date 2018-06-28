@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import <UINavigationController+Orientation.h>
-
 @interface TSNavigationController : UINavigationController
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
