@@ -15,7 +15,6 @@
 		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
 		6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CE20D0C38900F2F339 /* ViewController.m */; };
-		6CA172D220D0C38900F2F339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172D020D0C38900F2F339 /* Main.storyboard */; };
 		6CA172D420D0C38900F2F339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172D320D0C38900F2F339 /* Assets.xcassets */; };
 		6CA172D720D0C38900F2F339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172D520D0C38900F2F339 /* LaunchScreen.storyboard */; };
 		6CA172DA20D0C38900F2F339 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172D920D0C38900F2F339 /* main.m */; };
@@ -23,6 +22,14 @@
 		6CA172EF20D0C38900F2F339 /* TSUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172EE20D0C38900F2F339 /* TSUIKitUITests.m */; };
 		6CA172FD20D0C3E800F2F339 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172FC20D0C3E800F2F339 /* Podfile */; };
 		6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1730320D0C49500F2F339 /* TSBaseViewController.m */; };
+		6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243720EA042F00D15132 /* TSBaseAnimation.m */; };
+		6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243920EA042F00D15132 /* TSNaviAnimation.m */; };
+		6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243D20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m */; };
+		6CE1244B20EA060400D15132 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244420EA060400D15132 /* MainViewController.m */; };
+		6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244620EA060400D15132 /* NoNaviViewController.m */; };
+		6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244820EA060400D15132 /* VideoBroadViewController.m */; };
+		6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244A20EA060400D15132 /* VideoViewController.m */; };
+		6CE1245120EA066400D15132 /* HasNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1245020EA066400D15132 /* HasNaviViewController.m */; };
 		C900AEED28076A7ED45C36E2 /* Pods_TSUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A52963AD94FFA859695AF4A /* Pods_TSUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +70,6 @@
 		6CA172CB20D0C38900F2F339 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6CA172CD20D0C38900F2F339 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6CA172CE20D0C38900F2F339 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6CA172D120D0C38900F2F339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CA172D320D0C38900F2F339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CA172D620D0C38900F2F339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CA172D820D0C38900F2F339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +83,22 @@
 		6CA172FC20D0C3E800F2F339 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6CA1730220D0C49500F2F339 /* TSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseViewController.h; sourceTree = "<group>"; };
 		6CA1730320D0C49500F2F339 /* TSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseViewController.m; sourceTree = "<group>"; };
+		6CE1243620EA042F00D15132 /* TSBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseAnimation.h; sourceTree = "<group>"; };
+		6CE1243720EA042F00D15132 /* TSBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseAnimation.m; sourceTree = "<group>"; };
+		6CE1243820EA042F00D15132 /* TSNaviAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimation.h; sourceTree = "<group>"; };
+		6CE1243920EA042F00D15132 /* TSNaviAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNaviAnimation.m; sourceTree = "<group>"; };
+		6CE1243C20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AnimationTransitioningSnapshot.h"; sourceTree = "<group>"; };
+		6CE1243D20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AnimationTransitioningSnapshot.m"; sourceTree = "<group>"; };
+		6CE1244320EA060400D15132 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6CE1244420EA060400D15132 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6CE1244520EA060400D15132 /* NoNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoNaviViewController.h; sourceTree = "<group>"; };
+		6CE1244620EA060400D15132 /* NoNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoNaviViewController.m; sourceTree = "<group>"; };
+		6CE1244720EA060400D15132 /* VideoBroadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBroadViewController.h; sourceTree = "<group>"; };
+		6CE1244820EA060400D15132 /* VideoBroadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBroadViewController.m; sourceTree = "<group>"; };
+		6CE1244920EA060400D15132 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		6CE1244A20EA060400D15132 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		6CE1244F20EA066400D15132 /* HasNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasNaviViewController.h; sourceTree = "<group>"; };
+		6CE1245020EA066400D15132 /* HasNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasNaviViewController.m; sourceTree = "<group>"; };
 		7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,9 +197,9 @@
 				6CA172FE20D0C45800F2F339 /* Code */,
 				6CA172CA20D0C38900F2F339 /* AppDelegate.h */,
 				6CA172CB20D0C38900F2F339 /* AppDelegate.m */,
+				6CE1244220EA060400D15132 /* Demo */,
 				6CA172CD20D0C38900F2F339 /* ViewController.h */,
 				6CA172CE20D0C38900F2F339 /* ViewController.m */,
-				6CA172D020D0C38900F2F339 /* Main.storyboard */,
 				6CA172D320D0C38900F2F339 /* Assets.xcassets */,
 				6CA172D520D0C38900F2F339 /* LaunchScreen.storyboard */,
 				6CA172D820D0C38900F2F339 /* Info.plist */,
@@ -207,6 +229,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6CE1243520EA042F00D15132 /* NaviTransition */,
 				6C9B3A5020E471E2006A10B2 /* TSNavigationController */,
 				6C4D034820D0E8910029AFAB /* UIViewController+StatusBar */,
 				6C4D034420D0E7160029AFAB /* UIViewController+Call */,
@@ -240,6 +263,36 @@
 				6CA1730320D0C49500F2F339 /* TSBaseViewController.m */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		6CE1243520EA042F00D15132 /* NaviTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6CE1243620EA042F00D15132 /* TSBaseAnimation.h */,
+				6CE1243720EA042F00D15132 /* TSBaseAnimation.m */,
+				6CE1243820EA042F00D15132 /* TSNaviAnimation.h */,
+				6CE1243920EA042F00D15132 /* TSNaviAnimation.m */,
+				6CE1243C20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.h */,
+				6CE1243D20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m */,
+			);
+			path = NaviTransition;
+			sourceTree = "<group>";
+		};
+		6CE1244220EA060400D15132 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				6CE1244F20EA066400D15132 /* HasNaviViewController.h */,
+				6CE1245020EA066400D15132 /* HasNaviViewController.m */,
+				6CE1244320EA060400D15132 /* MainViewController.h */,
+				6CE1244420EA060400D15132 /* MainViewController.m */,
+				6CE1244520EA060400D15132 /* NoNaviViewController.h */,
+				6CE1244620EA060400D15132 /* NoNaviViewController.m */,
+				6CE1244720EA060400D15132 /* VideoBroadViewController.h */,
+				6CE1244820EA060400D15132 /* VideoBroadViewController.m */,
+				6CE1244920EA060400D15132 /* VideoViewController.h */,
+				6CE1244A20EA060400D15132 /* VideoViewController.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		6CF466D76A8C2EDF1B7EB23D /* Pods */ = {
@@ -371,7 +424,6 @@
 				6CA172D720D0C38900F2F339 /* LaunchScreen.storyboard in Resources */,
 				6CA172D420D0C38900F2F339 /* Assets.xcassets in Resources */,
 				6CA172FD20D0C3E800F2F339 /* Podfile in Resources */,
-				6CA172D220D0C38900F2F339 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,12 +504,20 @@
 			files = (
 				6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
+				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,
+				6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */,
+				6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */,
 				6CA172DA20D0C38900F2F339 /* main.m in Sources */,
+				6CE1245120EA066400D15132 /* HasNaviViewController.m in Sources */,
+				6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */,
 				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
 				6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
 				6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */,
+				6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */,
+				6CE1244B20EA060400D15132 /* MainViewController.m in Sources */,
+				6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */,
 				6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */,
 				6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */,
 			);
@@ -495,14 +555,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6CA172D020D0C38900F2F339 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CA172D120D0C38900F2F339 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6CA172D520D0C38900F2F339 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -626,6 +678,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9TR9D33ZW;
 				INFOPLIST_FILE = TSUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harpbj.TSUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,6 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9TR9D33ZW;
 				INFOPLIST_FILE = TSUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harpbj.TSUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

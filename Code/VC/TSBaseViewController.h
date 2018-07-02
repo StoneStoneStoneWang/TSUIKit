@@ -13,6 +13,8 @@
 
 @interface TSBaseViewController : UIViewController
 
+@property(nonatomic,strong,readonly)UIPercentDrivenInteractiveTransition *interactivePopTransition;
+
 #pragma mark --- 添加子视图
 - (void)addOwnSubviews;
 
