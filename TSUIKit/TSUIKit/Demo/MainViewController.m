@@ -42,7 +42,6 @@
     TSNavigationController *navi2 = [[TSNavigationController alloc]initWithRootViewController:me];
     
     [self addChildViewController:navi2];
-    
 }
 
 @end

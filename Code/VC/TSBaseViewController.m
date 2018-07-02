@@ -30,10 +30,9 @@
     
     [self prepareData];
     
-    
-    
     [self addPanGesture];
 }
+
 - (void)addOwnSubviews {
     
     // MARK: do something in subclass
