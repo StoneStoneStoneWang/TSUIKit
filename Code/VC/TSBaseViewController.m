@@ -20,7 +20,7 @@
     
     if (self.navigationController) {
         
-        self.navigationController.navigationBar.translucent = false;
+        self.navigationController.navigationBar.translucent = true;
     }
 }
 
