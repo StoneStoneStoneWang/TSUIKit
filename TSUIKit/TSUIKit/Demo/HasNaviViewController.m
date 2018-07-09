@@ -7,7 +7,7 @@
 //
 
 #import "HasNaviViewController.h"
-
+#import "PersonBean.h"
 @interface HasNaviViewController ()
 
 @end
@@ -50,6 +50,26 @@
     HasNaviViewController *has = [HasNaviViewController new];
     
     [self.navigationController pushViewController:has animated:true];
+}
+- (void)onSelect:(id)data forIndexPath:(NSIndexPath *)indexPath {
+    
+    PersonBean *selectBean = (PersonBean *)data;
+    
+    switch (selectBean.type) {
+        case PersonalTypeCircle:
+        {
+            
+            
+        }
+            break;
+        case PersonalTypeAddress:
+        {
+            
+            
+        }
+        default:
+            break;
+    }
 }
 - (void)configOwnProperties {
     [super configOwnProperties];

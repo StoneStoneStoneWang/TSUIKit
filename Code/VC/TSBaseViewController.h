@@ -35,5 +35,8 @@
 
 - (void)prepareData;
 
+#pragma mark --- phone call
+
+- (void)phoneCall:(NSString *)phone;
 
 @end

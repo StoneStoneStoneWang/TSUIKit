@@ -15,6 +15,15 @@
 
 @implementation TSBaseViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.navigationController) {
+        
+        self.navigationController.navigationBar.translucent = false;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -58,6 +67,16 @@
     // MARK: do something in subclass
     
 }
+- (void)phoneCall:(NSString *)phone {
+    
+    UIWebView *webView = [[UIWebView alloc] initWithFrame: self.view.bounds];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phone]];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [webView loadRequest: request];
+}
 - (void)addPanGesture {
     
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
@@ -67,6 +86,7 @@
         popRecognizer.delegate = self;
     }
 }
+
 - (void)handlePopRecognizer:(UIPanGestureRecognizer *)recognizer
 {
     CGFloat progress = [recognizer translationInView:self.view].x / CGRectGetWidth(self.view.frame);
