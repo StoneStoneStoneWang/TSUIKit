@@ -1,13 +1,13 @@
 //
-//  HasNaviViewController.h
+//  TableViewCell.h
 //  TSUIKit
 //
 //  Created by three stone 王 on 2018/7/9.
 //  Copyright © 2018年 three stone 王. All rights reserved.
 //
 
-#import "TSBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface HasNaviViewController : TSBaseViewController
+@interface TableViewCell : UITableViewCell
 
 @end

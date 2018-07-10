@@ -14,11 +14,14 @@
 @end
 
 @implementation TSNavigationController
-
++ (void)initialize {
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.interactivePopGestureRecognizer.delegate = self;
+//    self.interactivePopGestureRecognizer.delegate = self;
     
     self.delegate = self;
 }

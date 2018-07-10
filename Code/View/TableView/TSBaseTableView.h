@@ -30,6 +30,11 @@
 
 - (void)prepareData;
 
+#pragma mark --- 更新 头部 脚部
+- (void)updateHeader:(id)data;
+
+- (void)updateFooter:(id)data;
+
 #pragma mark --- 增删改查
 
 - (void)updateData:(id)data;
@@ -42,5 +47,16 @@
 
 - (void)deleteData:(id)data forIndexPath:(NSIndexPath *)indexPath;
 
+@property (nonatomic ,assign ,readonly) NSInteger dataCount;
+
+- (NSArray *)queryAllData;
+
+- (id)queryDataFor:(NSIndexPath *)indexPath;
+
+- (id)queryDataForIdx:(NSInteger )idx;
+
+- (NSArray *)querySetFor:(NSArray <NSIndexPath *>*)set;
+
+- (NSArray *)queryDataForIdxs:(NSArray *)idxs;
 
 @end

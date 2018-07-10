@@ -8,6 +8,7 @@
 
 #import "NoNaviViewController.h"
 #import "HasNaviViewController.h"
+#import "TSInnerViewController.h"
 @interface NoNaviViewController ()
 
 @end
@@ -18,7 +19,14 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:true];
+    
 }
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    
+}
+
 - (void)configOwnSubviews {
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -47,9 +55,13 @@
 
 - (void)gotoHasNavi {
 
-    HasNaviViewController *has = [HasNaviViewController new];
+    TSInnerViewController *inner = [[TSInnerViewController alloc]init];
     
-    [self.navigationController pushViewController:has animated:true];
+    inner.zoomScale = false;
+    
+    [inner loadReq:@"https://www.baidu.com"];
+    
+    [self.navigationController pushViewController:inner animated:true];
 }
 
 @end

@@ -376,7 +376,10 @@
                          }];
     }
 }
-
+- (void)popEnded {
+    
+}
+- (void)pushEnded {}
 
 
 @end

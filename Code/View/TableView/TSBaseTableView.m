@@ -10,6 +10,7 @@
 @interface TSBaseTableView()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic ,strong ,readwrite) NSMutableArray *ts_dataArray;
+
 @end
 
 @implementation TSBaseTableView
@@ -46,6 +47,14 @@
     self.bounces = false;
     
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    
+    self.showsVerticalScrollIndicator = false;
+    
+    self.showsHorizontalScrollIndicator = false;
+    
+    self.backgroundColor = [UIColor clearColor];
 }
 - (void)prepareData {}
 
@@ -104,5 +113,92 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
     return 0;
+}
+- (void)updateData:(id)data {
+    
+    [_ts_dataArray removeAllObjects];
+    
+    [_ts_dataArray addObjectsFromArray:(NSArray *)data];
+    
+    [self reloadData];
+}
+
+- (void)appendData:(id)data {
+    
+    [_ts_dataArray addObjectsFromArray:(NSArray *)data];
+    
+    [self reloadData];
+}
+- (void)updateData:(id)data forIndexPath:(NSIndexPath *)indexPath {
+    
+    [_ts_dataArray replaceObjectAtIndex:indexPath.section withObject:data];
+    
+    [self reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
+    
+    [self performDelay];
+}
+- (void)deleteData:(id)data forIndexPath:(NSIndexPath *)indexPath {
+    
+    [_ts_dataArray removeObjectAtIndex:indexPath.section];
+    
+    [self deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
+    
+    [self performDelay];
+}
+- (void)insertData:(id)data forIndexPath:(NSIndexPath *)indexPath {
+    
+    [_ts_dataArray insertObject:data atIndex:indexPath.section];
+    
+    [self insertSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
+    
+    [self performDelay];
+}
+- (id)queryDataFor:(NSIndexPath *)indexPath {
+    
+    return _ts_dataArray[indexPath.section];
+}
+- (NSArray *)queryAllData {
+    
+    return _ts_dataArray;
+}
+- (NSArray *)querySetFor:(NSArray <NSIndexPath *>*)set {
+    
+    NSMutableArray *result = [NSMutableArray array];
+    
+    [set enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        [result addObject: _ts_dataArray[obj.section]];
+    }];
+    
+    return result;
+}
+- (id)queryDataForIdx:(NSInteger)idx {
+    
+    return _ts_dataArray[idx];
+}
+- (NSArray *)queryDataForIdxs:(NSArray *)idxs {
+    
+    NSMutableArray *result = [NSMutableArray array];
+    
+    [idxs enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSInteger i = [obj integerValue];
+        
+        [result addObject:_ts_dataArray[i]];
+    }];
+    
+    return result;
+}
+- (NSInteger)dataCount {
+    
+    return _ts_dataArray.count;
+}
+- (void)performDelay {
+    
+    [self performSelector:@selector(delay) withObject:nil afterDelay:0.2];
+}
+- (void)delay {
+    
+    [self reloadData];
 }
 @end

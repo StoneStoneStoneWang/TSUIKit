@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6C0BF75220F33C5F00E4466C /* PersonBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BF75120F33C5F00E4466C /* PersonBean.m */; };
+		6C0BF75820F34FA400E4466C /* HasNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BF75620F34FA400E4466C /* HasNaviViewController.m */; };
+		6C0BF75D20F3507A00E4466C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BF75B20F3507A00E4466C /* TableViewCell.m */; };
+		6C0BF75E20F3507A00E4466C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0BF75C20F3507A00E4466C /* TableViewCell.xib */; };
 		6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033C20D0C72F0029AFAB /* UIViewController+Orientation.m */; };
 		6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033F20D0C7620029AFAB /* UINavigationController+Orientation.m */; };
 		6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */; };
 		6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034620D0E7290029AFAB /* UIViewController+Call.m */; };
 		6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */; };
+		6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */; };
+		6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */; };
 		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
 		6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CE20D0C38900F2F339 /* ViewController.m */; };
@@ -30,7 +35,6 @@
 		6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244620EA060400D15132 /* NoNaviViewController.m */; };
 		6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244820EA060400D15132 /* VideoBroadViewController.m */; };
 		6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244A20EA060400D15132 /* VideoViewController.m */; };
-		6CE1245120EA066400D15132 /* HasNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1245020EA066400D15132 /* HasNaviViewController.m */; };
 		C900AEED28076A7ED45C36E2 /* Pods_TSUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A52963AD94FFA859695AF4A /* Pods_TSUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,11 @@
 		6C0BF74F20F337C900E4466C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6C0BF75020F33C5F00E4466C /* PersonBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonBean.h; sourceTree = "<group>"; };
 		6C0BF75120F33C5F00E4466C /* PersonBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonBean.m; sourceTree = "<group>"; };
+		6C0BF75520F34FA400E4466C /* HasNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasNaviViewController.h; sourceTree = "<group>"; };
+		6C0BF75620F34FA400E4466C /* HasNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasNaviViewController.m; sourceTree = "<group>"; };
+		6C0BF75A20F3507A00E4466C /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		6C0BF75B20F3507A00E4466C /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6C0BF75C20F3507A00E4466C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		6C4D033B20D0C72F0029AFAB /* UIViewController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
 		6C4D033C20D0C72F0029AFAB /* UIViewController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Orientation.m"; sourceTree = "<group>"; };
 		6C4D033E20D0C7620029AFAB /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Orientation.h"; sourceTree = "<group>"; };
@@ -68,6 +77,10 @@
 		6C4D034620D0E7290029AFAB /* UIViewController+Call.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Call.m"; sourceTree = "<group>"; };
 		6C4D034920D0E8A90029AFAB /* UIViewController+StatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StatusBar.h"; sourceTree = "<group>"; };
 		6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StatusBar.m"; sourceTree = "<group>"; };
+		6C639B0620F4358900BFBFE2 /* TSBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableView.h; sourceTree = "<group>"; };
+		6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableView.m; sourceTree = "<group>"; };
+		6C639B0A20F4A43E00BFBFE2 /* TSInnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInnerViewController.h; sourceTree = "<group>"; };
+		6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInnerViewController.m; sourceTree = "<group>"; };
 		6C9B3A5120E47221006A10B2 /* TSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
 		6C9B3A5220E47221006A10B2 /* TSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 		6CA172C720D0C38900F2F339 /* TSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +115,6 @@
 		6CE1244820EA060400D15132 /* VideoBroadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBroadViewController.m; sourceTree = "<group>"; };
 		6CE1244920EA060400D15132 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		6CE1244A20EA060400D15132 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		6CE1244F20EA066400D15132 /* HasNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasNaviViewController.h; sourceTree = "<group>"; };
-		6CE1245020EA066400D15132 /* HasNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasNaviViewController.m; sourceTree = "<group>"; };
 		7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +173,24 @@
 				6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */,
 			);
 			path = "UIViewController+StatusBar";
+			sourceTree = "<group>";
+		};
+		6C639B0520F4358900BFBFE2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6C639B0620F4358900BFBFE2 /* TSBaseTableView.h */,
+				6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		6C639B0920F4A42000BFBFE2 /* Inner */ = {
+			isa = PBXGroup;
+			children = (
+				6C639B0A20F4A43E00BFBFE2 /* TSInnerViewController.h */,
+				6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */,
+			);
+			path = Inner;
 			sourceTree = "<group>";
 		};
 		6C9B3A5020E471E2006A10B2 /* TSNavigationController */ = {
@@ -236,6 +265,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C639B0920F4A42000BFBFE2 /* Inner */,
 				6CE1243520EA042F00D15132 /* NaviTransition */,
 				6C9B3A5020E471E2006A10B2 /* TSNavigationController */,
 				6C4D034820D0E8910029AFAB /* UIViewController+StatusBar */,
@@ -252,6 +282,7 @@
 		6CA172FF20D0C48400F2F339 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C639B0520F4358900BFBFE2 /* TableView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,8 +319,11 @@
 		6CE1244220EA060400D15132 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				6CE1244F20EA066400D15132 /* HasNaviViewController.h */,
-				6CE1245020EA066400D15132 /* HasNaviViewController.m */,
+				6C0BF75520F34FA400E4466C /* HasNaviViewController.h */,
+				6C0BF75620F34FA400E4466C /* HasNaviViewController.m */,
+				6C0BF75A20F3507A00E4466C /* TableViewCell.h */,
+				6C0BF75B20F3507A00E4466C /* TableViewCell.m */,
+				6C0BF75C20F3507A00E4466C /* TableViewCell.xib */,
 				6C0BF75020F33C5F00E4466C /* PersonBean.h */,
 				6C0BF75120F33C5F00E4466C /* PersonBean.m */,
 				6CE1244320EA060400D15132 /* MainViewController.h */,
@@ -431,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA172D720D0C38900F2F339 /* LaunchScreen.storyboard in Resources */,
+				6C0BF75E20F3507A00E4466C /* TableViewCell.xib in Resources */,
 				6CA172D420D0C38900F2F339 /* Assets.xcassets in Resources */,
 				6CA172FD20D0C3E800F2F339 /* Podfile in Resources */,
 			);
@@ -511,23 +546,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */,
 				6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
 				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,
 				6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */,
+				6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */,
 				6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */,
 				6CA172DA20D0C38900F2F339 /* main.m in Sources */,
-				6CE1245120EA066400D15132 /* HasNaviViewController.m in Sources */,
 				6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */,
 				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
 				6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
 				6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */,
 				6C0BF75220F33C5F00E4466C /* PersonBean.m in Sources */,
+				6C0BF75D20F3507A00E4466C /* TableViewCell.m in Sources */,
 				6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */,
 				6CE1244B20EA060400D15132 /* MainViewController.m in Sources */,
 				6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */,
+				6C0BF75820F34FA400E4466C /* HasNaviViewController.m in Sources */,
 				6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */,
 				6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */,
 			);

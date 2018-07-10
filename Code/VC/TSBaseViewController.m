@@ -18,10 +18,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    if (self.navigationController) {
-        
-        self.navigationController.navigationBar.translucent = true;
-    }
+//    if (self.navigationController) {
+    
+//        self.navigationController.navigationBar.translucent = true;
+//    }
 }
 
 - (void)viewDidLoad {
@@ -82,7 +82,9 @@
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
     {
         UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePopRecognizer:)];
+        
         [self.view addGestureRecognizer:popRecognizer];
+        
         popRecognizer.delegate = self;
     }
 }
@@ -90,11 +92,14 @@
 - (void)handlePopRecognizer:(UIPanGestureRecognizer *)recognizer
 {
     CGFloat progress = [recognizer translationInView:self.view].x / CGRectGetWidth(self.view.frame);
+    
     progress = MIN(1.0, MAX(0.0, progress));
-    NSLog(@"progress---%.2f",progress);
+    
+//    NSLog(@"progress---%.2f",progress);
     if (recognizer.state == UIGestureRecognizerStateBegan)
     {
         self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc]init];
+        
         [self.navigationController popViewControllerAnimated:YES];
     }
     else if (recognizer.state == UIGestureRecognizerStateChanged)
@@ -114,10 +119,17 @@
         self.interactivePopTransition = nil;
     }
 }
-
+// && [gestureRecognizer velocityInView:self.view].x < 100
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
 {
-    return [gestureRecognizer velocityInView:self.view].x > 0;
+    BOOL result = [gestureRecognizer velocityInView:self.view].x > 0 && [gestureRecognizer locationInView:self.view].x < 100;
+    
+    return result;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    
+    return UIStatusBarStyleDefault;
 }
 
 @end

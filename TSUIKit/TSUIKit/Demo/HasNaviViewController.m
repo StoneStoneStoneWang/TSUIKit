@@ -1,24 +1,27 @@
 //
 //  HasNaviViewController.m
-//  TSTSTransionKitDemo
+//  TSUIKit
 //
-//  Created by three stone 王 on 2018/6/30.
+//  Created by three stone 王 on 2018/7/9.
 //  Copyright © 2018年 three stone 王. All rights reserved.
 //
 
 #import "HasNaviViewController.h"
-#import "PersonBean.h"
+
 @interface HasNaviViewController ()
 
 @end
 
 @implementation HasNaviViewController
 
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:false];
+    
 }
+
 - (void)configOwnSubviews {
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -53,29 +56,17 @@
 }
 - (void)onSelect:(id)data forIndexPath:(NSIndexPath *)indexPath {
     
-    PersonBean *selectBean = (PersonBean *)data;
-    
-    switch (selectBean.type) {
-        case PersonalTypeCircle:
-        {
-            
-            
-        }
-            break;
-        case PersonalTypeAddress:
-        {
-            
-            
-        }
-        default:
-            break;
-    }
+    self.automaticallyAdjustsScrollViewInsets = false;
+
 }
 - (void)configOwnProperties {
     [super configOwnProperties];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
 }
+
+
 - (void)goBack {
     
     [self.navigationController popViewControllerAnimated:true];
@@ -84,4 +75,6 @@
     
     return UIStatusBarStyleDefault;
 }
+
+
 @end
