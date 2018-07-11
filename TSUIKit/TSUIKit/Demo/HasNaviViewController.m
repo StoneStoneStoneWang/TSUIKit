@@ -20,6 +20,9 @@
     
     [self.navigationController setNavigationBarHidden:false];
     
+    self.loadingStatus = LoadingStatusBegin;
+    
+    self.loadingStatus = LoadingStatusLoading;
 }
 
 - (void)configOwnSubviews {
@@ -47,6 +50,13 @@
     [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     
     [self.view addSubview:btn1];
+    
+    [self performSelector:@selector(delay) withObject:nil afterDelay:3];
+}
+
+- (void)delay {
+    
+    self.loadingStatus = LoadingStatusFail;
 }
 - (void)goPush {
     
@@ -57,16 +67,19 @@
 - (void)onSelect:(id)data forIndexPath:(NSIndexPath *)indexPath {
     
     self.automaticallyAdjustsScrollViewInsets = false;
-
+    
 }
 - (void)configOwnProperties {
     [super configOwnProperties];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
 }
 
-
+- (void)prepareData {
+    
+    
+    
+}
 - (void)goBack {
     
     [self.navigationController popViewControllerAnimated:true];

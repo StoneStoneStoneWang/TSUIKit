@@ -6,8 +6,8 @@
 //  Copyright © 2018年 three stone 王. All rights reserved.
 //
 
-#import "TSBaseViewController.h"
+#import "TSLoadingViewController.h"
 
-@interface HasNaviViewController : TSBaseViewController
+@interface HasNaviViewController : TSLoadingViewController
 
 @end

@@ -55,13 +55,17 @@
 
 - (void)gotoHasNavi {
 
-    TSInnerViewController *inner = [[TSInnerViewController alloc]init];
+//    TSInnerViewController *inner = [[TSInnerViewController alloc]init];
+//
+//    inner.zoomScale = false;
+//
+//    [inner loadReq:@"https://www.baidu.com"];
+//
+//    [self.navigationController pushViewController:inner animated:true];
     
-    inner.zoomScale = false;
+    HasNaviViewController *vc = [HasNaviViewController new];
     
-    [inner loadReq:@"https://www.baidu.com"];
-    
-    [self.navigationController pushViewController:inner animated:true];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 @end

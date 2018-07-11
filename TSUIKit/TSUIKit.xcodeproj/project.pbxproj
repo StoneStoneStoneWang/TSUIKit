@@ -18,6 +18,9 @@
 		6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */; };
 		6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */; };
 		6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */; };
+		6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */; };
+		6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */; };
+		6C639B1620F4F78C00BFBFE2 /* UIViewController+TSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */; };
 		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
 		6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CE20D0C38900F2F339 /* ViewController.m */; };
@@ -81,6 +84,12 @@
 		6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableView.m; sourceTree = "<group>"; };
 		6C639B0A20F4A43E00BFBFE2 /* TSInnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInnerViewController.h; sourceTree = "<group>"; };
 		6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInnerViewController.m; sourceTree = "<group>"; };
+		6C639B0E20F4ADC700BFBFE2 /* TSLoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoadingViewController.h; sourceTree = "<group>"; };
+		6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoadingViewController.m; sourceTree = "<group>"; };
+		6C639B1120F4AE3600BFBFE2 /* TSLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoadingView.h; sourceTree = "<group>"; };
+		6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoadingView.m; sourceTree = "<group>"; };
+		6C639B1420F4F78C00BFBFE2 /* UIViewController+TSAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TSAdd.h"; sourceTree = "<group>"; };
+		6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TSAdd.m"; sourceTree = "<group>"; };
 		6C9B3A5120E47221006A10B2 /* TSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
 		6C9B3A5220E47221006A10B2 /* TSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 		6CA172C720D0C38900F2F339 /* TSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +202,17 @@
 			path = Inner;
 			sourceTree = "<group>";
 		};
+		6C639B0D20F4ADB000BFBFE2 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				6C639B0E20F4ADC700BFBFE2 /* TSLoadingViewController.h */,
+				6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */,
+				6C639B1120F4AE3600BFBFE2 /* TSLoadingView.h */,
+				6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		6C9B3A5020E471E2006A10B2 /* TSNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +285,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C639B0D20F4ADB000BFBFE2 /* Loading */,
 				6C639B0920F4A42000BFBFE2 /* Inner */,
 				6CE1243520EA042F00D15132 /* NaviTransition */,
 				6C9B3A5020E471E2006A10B2 /* TSNavigationController */,
@@ -299,6 +320,8 @@
 			children = (
 				6CA1730220D0C49500F2F339 /* TSBaseViewController.h */,
 				6CA1730320D0C49500F2F339 /* TSBaseViewController.m */,
+				6C639B1420F4F78C00BFBFE2 /* UIViewController+TSAdd.h */,
+				6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -548,6 +571,7 @@
 			files = (
 				6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */,
 				6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */,
+				6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
 				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,
 				6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */,
@@ -558,12 +582,14 @@
 				6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */,
 				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
 				6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */,
+				6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
 				6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */,
 				6C0BF75220F33C5F00E4466C /* PersonBean.m in Sources */,
 				6C0BF75D20F3507A00E4466C /* TableViewCell.m in Sources */,
 				6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */,
 				6CE1244B20EA060400D15132 /* MainViewController.m in Sources */,
+				6C639B1620F4F78C00BFBFE2 /* UIViewController+TSAdd.m in Sources */,
 				6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */,
 				6C0BF75820F34FA400E4466C /* HasNaviViewController.m in Sources */,
 				6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */,
