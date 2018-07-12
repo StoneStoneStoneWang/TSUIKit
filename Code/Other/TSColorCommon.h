@@ -18,6 +18,9 @@
 
 #define LEVERL2_COLOR [UIColor colorWithHexString:@"#666666"]
 
+#define BACKGROUND_COLOR [UIColor colorWithHexString:@"#f8f8f8"]
+
+#define SEPERATOR_COLOR [UIColor colorWithHexString:@"#eeeeee"]
 @interface UIColor (ColorChange)
 
 // 颜色转换：iOS中（以#开头）十六进制的颜色转换为UIColor(RGB)

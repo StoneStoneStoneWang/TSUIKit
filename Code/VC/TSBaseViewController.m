@@ -7,7 +7,7 @@
 //
 
 #import "TSBaseViewController.h"
-
+#import "TSColorCommon.h"
 @interface TSBaseViewController ()<UIGestureRecognizerDelegate>
 
 @property(nonatomic,strong,readwrite)UIPercentDrivenInteractiveTransition *interactivePopTransition;
@@ -96,6 +96,8 @@
 - (void)configOwnProperties {
     
     // MARK: do something in subclass
+    
+    self.view.backgroundColor = BACKGROUND_COLOR;
 }
 - (void)addOwnSubVC {
     
