@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (TSAdd)
+typedef void (^TSDataBlock)(id,id,id);
+
+@interface UIViewController (ADDProperty)
+
+@property (nonatomic ,copy) NSString *identifier;
+
+@property (nonatomic ,copy) TSDataBlock dataBlock;
 
 @end

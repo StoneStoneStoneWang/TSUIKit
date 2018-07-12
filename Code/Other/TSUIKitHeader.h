@@ -29,3 +29,5 @@
 #import "TSColorCommon.h"
 
 #import "TSBaseTableView.h"
+
+#import "UIViewController+ADDProperty.h"

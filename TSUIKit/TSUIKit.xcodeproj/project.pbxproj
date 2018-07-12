@@ -20,7 +20,7 @@
 		6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */; };
 		6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */; };
 		6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */; };
-		6C639B1620F4F78C00BFBFE2 /* UIViewController+TSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */; };
+		6C639B1620F4F78C00BFBFE2 /* UIViewController+ADDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1520F4F78C00BFBFE2 /* UIViewController+ADDProperty.m */; };
 		6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */; };
 		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
@@ -93,8 +93,8 @@
 		6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoadingViewController.m; sourceTree = "<group>"; };
 		6C639B1120F4AE3600BFBFE2 /* TSLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoadingView.h; sourceTree = "<group>"; };
 		6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoadingView.m; sourceTree = "<group>"; };
-		6C639B1420F4F78C00BFBFE2 /* UIViewController+TSAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TSAdd.h"; sourceTree = "<group>"; };
-		6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TSAdd.m"; sourceTree = "<group>"; };
+		6C639B1420F4F78C00BFBFE2 /* UIViewController+ADDProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ADDProperty.h"; sourceTree = "<group>"; };
+		6C639B1520F4F78C00BFBFE2 /* UIViewController+ADDProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ADDProperty.m"; sourceTree = "<group>"; };
 		6C813D4E20F7ACA100C8FC13 /* UITabBarController+AddChild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+AddChild.h"; sourceTree = "<group>"; };
 		6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+AddChild.m"; sourceTree = "<group>"; };
 		6C813D5120F7AF6E00C8FC13 /* TSColorCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSColorCommon.h; sourceTree = "<group>"; };
@@ -348,8 +348,8 @@
 			children = (
 				6CA1730220D0C49500F2F339 /* TSBaseViewController.h */,
 				6CA1730320D0C49500F2F339 /* TSBaseViewController.m */,
-				6C639B1420F4F78C00BFBFE2 /* UIViewController+TSAdd.h */,
-				6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */,
+				6C639B1420F4F78C00BFBFE2 /* UIViewController+ADDProperty.h */,
+				6C639B1520F4F78C00BFBFE2 /* UIViewController+ADDProperty.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -636,7 +636,7 @@
 				6C0BF75D20F3507A00E4466C /* TableViewCell.m in Sources */,
 				6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */,
 				6CE1244B20EA060400D15132 /* MainViewController.m in Sources */,
-				6C639B1620F4F78C00BFBFE2 /* UIViewController+TSAdd.m in Sources */,
+				6C639B1620F4F78C00BFBFE2 /* UIViewController+ADDProperty.m in Sources */,
 				6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */,
 				6C0BF75820F34FA400E4466C /* HasNaviViewController.m in Sources */,
 				6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */,
