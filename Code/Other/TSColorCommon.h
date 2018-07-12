@@ -16,7 +16,7 @@
 
 #define LEVEL1_COLOR [UIColor colorWithHexString:@"#333333"]
 
-#define LEVERL@_COLOR [UIColor colorWithHexString:@"#666666"]
+#define LEVERL2_COLOR [UIColor colorWithHexString:@"#666666"]
 
 @interface UIColor (ColorChange)
 

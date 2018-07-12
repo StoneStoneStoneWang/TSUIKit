@@ -98,6 +98,7 @@
 		6C813D4E20F7ACA100C8FC13 /* UITabBarController+AddChild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+AddChild.h"; sourceTree = "<group>"; };
 		6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+AddChild.m"; sourceTree = "<group>"; };
 		6C813D5120F7AF6E00C8FC13 /* TSColorCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSColorCommon.h; sourceTree = "<group>"; };
+		6C813D5720F7C17400C8FC13 /* TSUIKitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSUIKitHeader.h; sourceTree = "<group>"; };
 		6C9B3A5120E47221006A10B2 /* TSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
 		6C9B3A5220E47221006A10B2 /* TSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 		6CA172C720D0C38900F2F339 /* TSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				6C813D5120F7AF6E00C8FC13 /* TSColorCommon.h */,
+				6C813D5720F7C17400C8FC13 /* TSUIKitHeader.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
