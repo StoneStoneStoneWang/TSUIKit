@@ -9,6 +9,7 @@
 #import "TSNavigationController.h"
 #import "TSNaviAnimation.h"
 #import "TSBaseViewController.h"
+#import "TSColorCommon.h"
 @interface TSNavigationController () <UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end
@@ -16,7 +17,12 @@
 @implementation TSNavigationController
 + (void)initialize {
     
+    [[UINavigationBar appearance] setBarTintColor: [UIColor whiteColor]];
     
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+                                                           NSForegroundColorAttributeName: LEVEL1_COLOR
+                                                           }];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

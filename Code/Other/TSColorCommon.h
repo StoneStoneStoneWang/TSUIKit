@@ -14,6 +14,10 @@
 
 #define TAB_SELECT_COLOR [UIColor colorWithHexString:@"#59b5f8"]
 
+#define LEVEL1_COLOR [UIColor colorWithHexString:@"#333333"]
+
+#define LEVERL@_COLOR [UIColor colorWithHexString:@"#666666"]
+
 @interface UIColor (ColorChange)
 
 // 颜色转换：iOS中（以#开头）十六进制的颜色转换为UIColor(RGB)
