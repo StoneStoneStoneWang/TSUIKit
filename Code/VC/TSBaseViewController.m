@@ -19,41 +19,41 @@
     [super viewWillAppear:animated];
     
 #pragma mark ---- 如果不是通过xib加载的 取消 第一个检查器 use trait variations勾选
-//    if (self.navigationController ) {
-//
-//        BOOL hasXXXib = true;
-//
-//        @try {
-//            [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil];
-//        } @catch (NSException *exception) {
-//
-//            hasXXXib = false;
-//        } @finally {
-//
-//            NSLog(@"@finally");
-//        }
-//
-//        if (!hasXXXib) {
-//
-//            self.navigationController.navigationBar.translucent = false;
-//        }
-//    }
+    //    if (self.navigationController ) {
+    //
+    //        BOOL hasXXXib = true;
+    //
+    //        @try {
+    //            [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil];
+    //        } @catch (NSException *exception) {
+    //
+    //            hasXXXib = false;
+    //        } @finally {
+    //
+    //            NSLog(@"@finally");
+    //        }
+    //
+    //        if (!hasXXXib) {
+    //
+    //            self.navigationController.navigationBar.translucent = false;
+    //        }
+    //    }
 }
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
-//    if (self.navigationController ) {
-//
-//        if (!self.navigationController.navigationBar.isTranslucent && self.navigationController.childViewControllers.count > 1 && !self.navigationController.isNavigationBarHidden) {
-//
-//            CGRect frame = self.view.bounds;
-//
-//            self.view.frame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame) - 64);
-//        } else {
-//
-//
-//        }
-//    }
+    //    if (self.navigationController ) {
+    //
+    //        if (!self.navigationController.navigationBar.isTranslucent && self.navigationController.childViewControllers.count > 1 && !self.navigationController.isNavigationBarHidden) {
+    //
+    //            CGRect frame = self.view.bounds;
+    //
+    //            self.view.frame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame) - 64);
+    //        } else {
+    //
+    //
+    //        }
+    //    }
     
 }
 - (void)viewDidLoad {
@@ -151,6 +151,7 @@
         self.interactivePopTransition = nil;
     }
 }
+
 // && [gestureRecognizer velocityInView:self.view].x < 100
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
 {
@@ -165,3 +166,9 @@
 }
 
 @end
+// vc 只做 请求数据 事件处理
+// tableview view updateViewData
+// 数据的流向
+// 
+
+

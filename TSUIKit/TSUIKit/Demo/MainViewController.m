@@ -13,6 +13,7 @@
 
 #import "TSNavigationController.h"
 
+#import "UITabBarController+AddChild.h"
 @interface MainViewController ()
 
 @end
@@ -25,23 +26,11 @@
     
     VideoViewController *video = [VideoViewController new];
     
-    video.title = @"视频";
-    
-    video.tabBarItem.title = @"视频";
-    
-    TSNavigationController *navi1 = [[TSNavigationController alloc]initWithRootViewController:video];
-    
-    [self addChildViewController:navi1];
-    
+    [self addChildViewController:video withTitle:@"视频" andTabTitle:@"视频" andNormalImage:@"tab_news_normal_icon" andSelectImage:@"tab_news_selected_icon"];
+
     NoNaviViewController *me = [NoNaviViewController new];
     
-    me.title = @"我的";
-    
-    me.tabBarItem.title = @"我的";
-    
-    TSNavigationController *navi2 = [[TSNavigationController alloc]initWithRootViewController:me];
-    
-    [self addChildViewController:navi2];
+    [self addChildViewController:me withTitle:@"我的" andTabTitle:@"我的" andNormalImage:@"tab_news_normal_icon" andSelectImage:@"tab_news_selected_icon"];
 }
 
 @end

@@ -21,6 +21,7 @@
 		6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */; };
 		6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */; };
 		6C639B1620F4F78C00BFBFE2 /* UIViewController+TSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */; };
+		6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */; };
 		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
 		6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CE20D0C38900F2F339 /* ViewController.m */; };
@@ -34,6 +35,7 @@
 		6CCD009020F73FA9008E3E23 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD008E20F73FA9008E3E23 /* XibViewController.m */; };
 		6CCD009120F73FA9008E3E23 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCD008F20F73FA9008E3E23 /* XibViewController.xib */; };
 		6CCD009320F74301008E3E23 /* UMConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCD009220F74301008E3E23 /* UMConfig.plist */; };
+		6CCD009B20F762C4008E3E23 /* JTZCircleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD009A20F762C4008E3E23 /* JTZCircleDetailViewController.m */; };
 		6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243720EA042F00D15132 /* TSBaseAnimation.m */; };
 		6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243920EA042F00D15132 /* TSNaviAnimation.m */; };
 		6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243D20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m */; };
@@ -93,6 +95,9 @@
 		6C639B1220F4AE3600BFBFE2 /* TSLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoadingView.m; sourceTree = "<group>"; };
 		6C639B1420F4F78C00BFBFE2 /* UIViewController+TSAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TSAdd.h"; sourceTree = "<group>"; };
 		6C639B1520F4F78C00BFBFE2 /* UIViewController+TSAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TSAdd.m"; sourceTree = "<group>"; };
+		6C813D4E20F7ACA100C8FC13 /* UITabBarController+AddChild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+AddChild.h"; sourceTree = "<group>"; };
+		6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+AddChild.m"; sourceTree = "<group>"; };
+		6C813D5120F7AF6E00C8FC13 /* TSColorCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSColorCommon.h; sourceTree = "<group>"; };
 		6C9B3A5120E47221006A10B2 /* TSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
 		6C9B3A5220E47221006A10B2 /* TSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 		6CA172C720D0C38900F2F339 /* TSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +122,8 @@
 		6CCD008E20F73FA9008E3E23 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
 		6CCD008F20F73FA9008E3E23 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
 		6CCD009220F74301008E3E23 /* UMConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UMConfig.plist; sourceTree = "<group>"; };
+		6CCD009920F762C4008E3E23 /* JTZCircleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTZCircleDetailViewController.h; sourceTree = "<group>"; };
+		6CCD009A20F762C4008E3E23 /* JTZCircleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTZCircleDetailViewController.m; sourceTree = "<group>"; };
 		6CE1243620EA042F00D15132 /* TSBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseAnimation.h; sourceTree = "<group>"; };
 		6CE1243720EA042F00D15132 /* TSBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseAnimation.m; sourceTree = "<group>"; };
 		6CE1243820EA042F00D15132 /* TSNaviAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimation.h; sourceTree = "<group>"; };
@@ -220,6 +227,15 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		6C813D4D20F7AC5800C8FC13 /* UITabController+AddChild */ = {
+			isa = PBXGroup;
+			children = (
+				6C813D4E20F7ACA100C8FC13 /* UITabBarController+AddChild.h */,
+				6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */,
+			);
+			path = "UITabController+AddChild";
+			sourceTree = "<group>";
+		};
 		6C9B3A5020E471E2006A10B2 /* TSNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +309,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C813D4D20F7AC5800C8FC13 /* UITabController+AddChild */,
 				6C639B0D20F4ADB000BFBFE2 /* Loading */,
 				6C639B0920F4A42000BFBFE2 /* Inner */,
 				6CE1243520EA042F00D15132 /* NaviTransition */,
@@ -319,6 +336,7 @@
 		6CA1730020D0C48400F2F339 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6C813D5120F7AF6E00C8FC13 /* TSColorCommon.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -333,6 +351,16 @@
 			);
 			path = VC;
 			sourceTree = "<group>";
+		};
+		6CCD009820F76280008E3E23 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD009920F762C4008E3E23 /* JTZCircleDetailViewController.h */,
+				6CCD009A20F762C4008E3E23 /* JTZCircleDetailViewController.m */,
+			);
+			name = Circle;
+			path = TSUIKit/Circle;
+			sourceTree = SOURCE_ROOT;
 		};
 		6CE1243520EA042F00D15132 /* NaviTransition */ = {
 			isa = PBXGroup;
@@ -350,6 +378,7 @@
 		6CE1244220EA060400D15132 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				6CCD009820F76280008E3E23 /* Circle */,
 				6C0BF75520F34FA400E4466C /* HasNaviViewController.h */,
 				6C0BF75620F34FA400E4466C /* HasNaviViewController.m */,
 				6CCD008D20F73FA9008E3E23 /* XibViewController.h */,
@@ -588,6 +617,7 @@
 				6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
 				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,
+				6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */,
 				6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */,
 				6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */,
 				6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
@@ -595,6 +625,7 @@
 				6CA172DA20D0C38900F2F339 /* main.m in Sources */,
 				6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */,
 				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
+				6CCD009B20F762C4008E3E23 /* JTZCircleDetailViewController.m in Sources */,
 				6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */,
 				6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
