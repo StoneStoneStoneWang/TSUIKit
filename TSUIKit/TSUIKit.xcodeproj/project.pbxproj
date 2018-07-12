@@ -31,6 +31,9 @@
 		6CA172EF20D0C38900F2F339 /* TSUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172EE20D0C38900F2F339 /* TSUIKitUITests.m */; };
 		6CA172FD20D0C3E800F2F339 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CA172FC20D0C3E800F2F339 /* Podfile */; };
 		6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1730320D0C49500F2F339 /* TSBaseViewController.m */; };
+		6CCD009020F73FA9008E3E23 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD008E20F73FA9008E3E23 /* XibViewController.m */; };
+		6CCD009120F73FA9008E3E23 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCD008F20F73FA9008E3E23 /* XibViewController.xib */; };
+		6CCD009320F74301008E3E23 /* UMConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCD009220F74301008E3E23 /* UMConfig.plist */; };
 		6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243720EA042F00D15132 /* TSBaseAnimation.m */; };
 		6CE1243F20EA042F00D15132 /* TSNaviAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243920EA042F00D15132 /* TSNaviAnimation.m */; };
 		6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1243D20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m */; };
@@ -110,6 +113,10 @@
 		6CA172FC20D0C3E800F2F339 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6CA1730220D0C49500F2F339 /* TSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseViewController.h; sourceTree = "<group>"; };
 		6CA1730320D0C49500F2F339 /* TSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseViewController.m; sourceTree = "<group>"; };
+		6CCD008D20F73FA9008E3E23 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
+		6CCD008E20F73FA9008E3E23 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		6CCD008F20F73FA9008E3E23 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
+		6CCD009220F74301008E3E23 /* UMConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UMConfig.plist; sourceTree = "<group>"; };
 		6CE1243620EA042F00D15132 /* TSBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseAnimation.h; sourceTree = "<group>"; };
 		6CE1243720EA042F00D15132 /* TSBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseAnimation.m; sourceTree = "<group>"; };
 		6CE1243820EA042F00D15132 /* TSNaviAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNaviAnimation.h; sourceTree = "<group>"; };
@@ -254,6 +261,7 @@
 				6CE1244220EA060400D15132 /* Demo */,
 				6CA172CD20D0C38900F2F339 /* ViewController.h */,
 				6CA172CE20D0C38900F2F339 /* ViewController.m */,
+				6CCD009220F74301008E3E23 /* UMConfig.plist */,
 				6C0BF74E20F3363100E4466C /* Global.h */,
 				6C0BF74F20F337C900E4466C /* PrefixHeader.pch */,
 				6CA172D320D0C38900F2F339 /* Assets.xcassets */,
@@ -344,6 +352,9 @@
 			children = (
 				6C0BF75520F34FA400E4466C /* HasNaviViewController.h */,
 				6C0BF75620F34FA400E4466C /* HasNaviViewController.m */,
+				6CCD008D20F73FA9008E3E23 /* XibViewController.h */,
+				6CCD008E20F73FA9008E3E23 /* XibViewController.m */,
+				6CCD008F20F73FA9008E3E23 /* XibViewController.xib */,
 				6C0BF75A20F3507A00E4466C /* TableViewCell.h */,
 				6C0BF75B20F3507A00E4466C /* TableViewCell.m */,
 				6C0BF75C20F3507A00E4466C /* TableViewCell.xib */,
@@ -487,7 +498,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCD009120F73FA9008E3E23 /* XibViewController.xib in Resources */,
 				6CA172D720D0C38900F2F339 /* LaunchScreen.storyboard in Resources */,
+				6CCD009320F74301008E3E23 /* UMConfig.plist in Resources */,
 				6C0BF75E20F3507A00E4466C /* TableViewCell.xib in Resources */,
 				6CA172D420D0C38900F2F339 /* Assets.xcassets in Resources */,
 				6CA172FD20D0C3E800F2F339 /* Podfile in Resources */,
@@ -571,6 +584,7 @@
 			files = (
 				6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */,
 				6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */,
+				6CCD009020F73FA9008E3E23 /* XibViewController.m in Sources */,
 				6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
 				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,

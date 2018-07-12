@@ -18,12 +18,44 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-//    if (self.navigationController) {
-    
-//        self.navigationController.navigationBar.translucent = true;
+#pragma mark ---- 如果不是通过xib加载的 取消 第一个检查器 use trait variations勾选
+//    if (self.navigationController ) {
+//
+//        BOOL hasXXXib = true;
+//
+//        @try {
+//            [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil];
+//        } @catch (NSException *exception) {
+//
+//            hasXXXib = false;
+//        } @finally {
+//
+//            NSLog(@"@finally");
+//        }
+//
+//        if (!hasXXXib) {
+//
+//            self.navigationController.navigationBar.translucent = false;
+//        }
 //    }
 }
-
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    
+//    if (self.navigationController ) {
+//
+//        if (!self.navigationController.navigationBar.isTranslucent && self.navigationController.childViewControllers.count > 1 && !self.navigationController.isNavigationBarHidden) {
+//
+//            CGRect frame = self.view.bounds;
+//
+//            self.view.frame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame) - 64);
+//        } else {
+//
+//
+//        }
+//    }
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -95,7 +127,7 @@
     
     progress = MIN(1.0, MAX(0.0, progress));
     
-//    NSLog(@"progress---%.2f",progress);
+    //    NSLog(@"progress---%.2f",progress);
     if (recognizer.state == UIGestureRecognizerStateBegan)
     {
         self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc]init];

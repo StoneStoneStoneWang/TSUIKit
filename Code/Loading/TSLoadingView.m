@@ -8,6 +8,27 @@
 
 #import "TSLoadingView.h"
 #import <objc/runtime.h>
+
+@interface LoadingImageBean: NSObject
+
+@property (nonatomic ,copy) NSString *Loading_Image;
+
+@end
+
+@implementation LoadingImageBean
+
++ (LoadingImageBean *)instance{
+    
+    LoadingImageBean *image = [LoadingImageBean new];
+    
+    NSDictionary *json = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UMConfig" ofType:@"plist"]];
+    
+    image.Loading_Image = json[@"Loading_Image"];
+    
+    return image;
+}
+@end
+
 @interface TSLoadingView()
 {
     UIActivityIndicatorView *_activity;
@@ -29,17 +50,22 @@
     
     return [[TSLoadingView alloc] initWithContentViewController:contentViewController];
 }
+
 - (instancetype)initWithContentViewController:(TSBaseViewController *)contentViewController {
     
     if (self = [super init]) {
         
         self.contentViewController = contentViewController;
         
-        self.backgroundColor = [UIColor colorWithRed: 224 / 255.0f green:224 / 255.0f blue:224 / 255.0f alpha:1];
+        self.backgroundColor = [UIColor colorWithRed: 240 / 255.0f green:240 / 255.0f blue:240 / 255.0f alpha:1];
         
         _reloadLabel = [[UILabel alloc] init];
         
-        _activity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyleWhiteLarge)];
+        _activity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyleGray)];
+        
+        LoadingImageBean *l = [LoadingImageBean instance];
+        
+        _iconImageView = [[UIImageView alloc]initWithImage: [UIImage imageNamed:l.Loading_Image]];
         
         _backgroundItem = [UIButton buttonWithType:UIButtonTypeCustom];
         
@@ -91,19 +117,21 @@
     
     CGFloat h = CGRectGetHeight(self.contentViewController.view.bounds);
     
-    if (self.contentViewController.navigationController) {
-        
-        if (self.contentViewController.navigationController.navigationBar.isTranslucent) {
-            
-            self.frame = CGRectMake(0, 64, w, h - 64);
-        } else {
-            
-            self.frame = CGRectMake(0, 0, w, h - 64);
-        }
-    } else {
-        
-        self.frame = self.contentViewController.view.bounds;
-    }
+    //    if (self.contentViewController.navigationController) {
+    //
+    //        if (self.contentViewController.navigationController.navigationBar.isTranslucent) {
+    //
+    //            self.frame = CGRectMake(0, 0, w, h - 64);
+    //        } else {
+    //
+    //            self.frame = CGRectMake(0, 64, w, h - 64);
+    //        }
+    //    } else {
+    //
+    //        self.frame = self.contentViewController.view.bounds;
+    //    }
+    
+    self.frame = self.contentViewController.view.bounds;
     
     [self.contentViewController.view bringSubviewToFront:self];
     
@@ -117,16 +145,17 @@
     
     _activity.center = CGPointMake(w / 2, (h - 64) / 2);
     
-    //    _iconImageView = [[UIImageView alloc] initWithImage:<#(nullable UIImage *)#>];
+    [self addSubview:_iconImageView];
     
-    //    [self addSubview:_iconImageView];
-    //
+    _iconImageView.frame = CGRectMake(0, 0, 100, 100);
     
+    _iconImageView.center = CGPointMake(w / 2, (h - 64) / 2 - 100);
+
     _reloadLabel.frame = CGRectMake(0, (h - 64) / 2, w, 40);
     
     _reloadLabel.text = @"点击屏幕 重新加载";
     
-    _reloadLabel.textColor = [UIColor whiteColor];
+    _reloadLabel.textColor = [UIColor colorWithRed: 0x66 / 255.0f green:0x66 / 255.0f blue:0x66 / 255.0f alpha:1];
     
     _reloadLabel.font = [UIFont systemFontOfSize:20];
     

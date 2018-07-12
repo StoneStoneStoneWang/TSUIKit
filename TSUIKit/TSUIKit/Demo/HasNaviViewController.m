@@ -7,7 +7,7 @@
 //
 
 #import "HasNaviViewController.h"
-
+#import "XibViewController.h"
 @interface HasNaviViewController ()
 
 @end
@@ -51,18 +51,28 @@
     
     [self.view addSubview:btn1];
     
-    [self performSelector:@selector(delay) withObject:nil afterDelay:3];
+    [self performSelector:@selector(delay_test) withObject:nil afterDelay:3];
+    
+    [self performSelector:@selector(delay_test1) withObject:nil afterDelay:6];
 }
 
-- (void)delay {
+- (void)delay_test {
     
     self.loadingStatus = LoadingStatusFail;
 }
+
+- (void)delay_test1 {
+    
+//    self.loadingStatus = LoadingStatusSucc;
+}
+
 - (void)goPush {
     
-    HasNaviViewController *has = [HasNaviViewController new];
+    XibViewController *xib = [XibViewController new];
     
-    [self.navigationController pushViewController:has animated:true];
+//    HasNaviViewController *has = [HasNaviViewController new];
+    
+    [self.navigationController pushViewController:xib animated:true];
 }
 - (void)onSelect:(id)data forIndexPath:(NSIndexPath *)indexPath {
     
