@@ -14,7 +14,14 @@
 @end
 
 @implementation TSBaseViewController
-
+- (UIWebView *)phoneWebView {
+    
+    if (!_phoneWebView) {
+        
+        _phoneWebView = [UIWebView new];
+    }
+    return _phoneWebView;
+}
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -24,6 +31,9 @@
         
         self.navigationController.navigationBar.translucent = false;
     }
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
     //        if (self.navigationController ) {
     //
     //            BOOL hasXXXib = true;
@@ -173,7 +183,25 @@
     
     return UIStatusBarStyleDefault;
 }
-
+#pragma mark --- phone call
+- (void)call:(NSString *)phone {
+    
+    self.phoneWebView.delegate = self;
+    
+    NSURL *url = [NSURL URLWithString:phone];
+    
+    [self.phoneWebView loadRequest: [NSURLRequest requestWithURL:url]];
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"WebKitDiskImageCacheEnabled"];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"WebKitOfflineWebApplicationCacheEnabled"];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"WebKitCacheModelPreferenceKey"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 @end
 // vc 只做 请求数据 事件处理
 // tableview view updateViewData

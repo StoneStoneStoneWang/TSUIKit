@@ -18,8 +18,6 @@
 
 #import "UIViewController+StatusBar.h"
 
-#import "UIViewController+Call.h"
-
 #import "UIViewController+Orientation.h"
 
 #import "UINavigationController+Orientation.h"

@@ -14,7 +14,6 @@
 		6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033C20D0C72F0029AFAB /* UIViewController+Orientation.m */; };
 		6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033F20D0C7620029AFAB /* UINavigationController+Orientation.m */; };
 		6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */; };
-		6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034620D0E7290029AFAB /* UIViewController+Call.m */; };
 		6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */; };
 		6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */; };
 		6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */; };
@@ -83,8 +82,6 @@
 		6C4D033F20D0C7620029AFAB /* UINavigationController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Orientation.m"; sourceTree = "<group>"; };
 		6C4D034120D0C7830029AFAB /* UITabBarController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Orientation.h"; sourceTree = "<group>"; };
 		6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Orientation.m"; sourceTree = "<group>"; };
-		6C4D034520D0E7290029AFAB /* UIViewController+Call.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Call.h"; sourceTree = "<group>"; };
-		6C4D034620D0E7290029AFAB /* UIViewController+Call.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Call.m"; sourceTree = "<group>"; };
 		6C4D034920D0E8A90029AFAB /* UIViewController+StatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StatusBar.h"; sourceTree = "<group>"; };
 		6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StatusBar.m"; sourceTree = "<group>"; };
 		6C639B0620F4358900BFBFE2 /* TSBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableView.h; sourceTree = "<group>"; };
@@ -190,8 +187,6 @@
 		6C4D034420D0E7160029AFAB /* UIViewController+Call */ = {
 			isa = PBXGroup;
 			children = (
-				6C4D034520D0E7290029AFAB /* UIViewController+Call.h */,
-				6C4D034620D0E7290029AFAB /* UIViewController+Call.m */,
 			);
 			path = "UIViewController+Call";
 			sourceTree = "<group>";
@@ -648,7 +643,6 @@
 				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
 				6C813D7320F8329700C8FC13 /* TSBaseTableViewCell.m in Sources */,
 				6CCD009B20F762C4008E3E23 /* JTZCircleDetailViewController.m in Sources */,
-				6C4D034720D0E7290029AFAB /* UIViewController+Call.m in Sources */,
 				6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
 				6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */,
