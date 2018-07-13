@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "TS_UIKit"
-s.version      = "1.2.2"
+s.version      = "1.2.3"
 s.summary      = "A Lib For UI."
 s.description  = <<-DESC
 TSUIKit 是一个UI基类 新增push and pop 转场 新增loadingvc
@@ -21,6 +21,8 @@ s.frameworks = 'UIKit', 'Foundation'
 s.source       = { :git => "https://github.com/StoneStoneStoneWang/TSUIKit.git", :tag => "#{s.version}" }
 
 s.source_files = "Code/**/*.{h,m}"
+
+s.dependency 'Masonry'
 
 end
 

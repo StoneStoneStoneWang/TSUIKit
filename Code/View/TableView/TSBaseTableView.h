@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TSBaseTableBean.h"
 @class TSBaseTableView;
 
 @protocol TSBaseTableViewDelegate<NSObject>
 
-- (void)onTableView:(TSBaseTableView *)tableView forIndexPath:(NSIndexPath *)indexPath withData:(id)data;
+- (void)onTableView:(TSBaseTableView *)tableView forIndexPath:(NSIndexPath *)indexPath withData:(TSBaseTableBean *)data;
 
 @end
 
-@interface TSBaseTableView : UITableView
+@interface TSBaseTableView : UITableView <UITableViewDelegate,UITableViewDataSource>
 
 #pragma mark --- 自定义delegate
 @property (nonatomic ,weak) id<TSBaseTableViewDelegate> mDelegate;
@@ -37,26 +37,27 @@
 
 #pragma mark --- 增删改查
 
-- (void)updateData:(id)data;
+- (void)updateData:(NSArray <TSBaseTableBean *>*)data;
 
-- (void)appendData:(id)data;
+- (void)appendData:(NSArray <TSBaseTableBean *>*)data;
 
-- (void)updateData:(id)data forIndexPath:(NSIndexPath *)indexPath;
+- (void)updateData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath;
 
-- (void)insertData:(id)data forIndexPath:(NSIndexPath *)indexPath;
+- (void)insertData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath;
 
-- (void)deleteData:(id)data forIndexPath:(NSIndexPath *)indexPath;
+- (void)deleteData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath;
 
 @property (nonatomic ,assign ,readonly) NSInteger dataCount;
 
-- (NSArray *)queryAllData;
+- (NSArray <TSBaseTableBean *>*)queryAllData;
 
-- (id)queryDataFor:(NSIndexPath *)indexPath;
+- (TSBaseTableBean *)queryDataFor:(NSIndexPath *)indexPath;
 
-- (id)queryDataForIdx:(NSInteger )idx;
+- (TSBaseTableBean *)queryDataForIdx:(NSInteger )idx;
 
-- (NSArray *)querySetFor:(NSArray <NSIndexPath *>*)set;
+- (NSArray <TSBaseTableBean *>*)querySetFor:(NSArray <NSIndexPath *>*)set;
 
-- (NSArray *)queryDataForIdxs:(NSArray *)idxs;
+- (NSArray <TSBaseTableBean *>*)queryDataForIdxs:(NSArray *)idxs;
 
+- (NSIndexPath *)queryDataForIndexPath:(TSBaseTableBean *)data;
 @end

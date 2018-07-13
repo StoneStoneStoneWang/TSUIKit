@@ -31,3 +31,7 @@
 #import "TSBaseTableView.h"
 
 #import "UIViewController+ADDProperty.h"
+
+#import "TSBaseTableViewCell.h"
+
+#import "TSBaseTableBean.h"

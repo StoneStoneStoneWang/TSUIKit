@@ -7,7 +7,9 @@
 //
 
 #import "TSBaseTableView.h"
-@interface TSBaseTableView()<UITableViewDelegate,UITableViewDataSource>
+#import "TSColorCommon.h"
+#import "TSBaseTableViewCell.h"
+@interface TSBaseTableView()
 
 @property (nonatomic ,strong ,readwrite) NSMutableArray *ts_dataArray;
 
@@ -62,6 +64,8 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
+//    TSBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@""];
+    
     return [UITableViewCell new];
 }
 
@@ -78,7 +82,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 0;
+    TSBaseTableBean *bean = _ts_dataArray[indexPath.section];
+    
+    return bean.cellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -94,42 +100,46 @@
     
     UIView *view = [UIView new];
     
-    view.backgroundColor = [UIColor clearColor];
+    view.backgroundColor = SEPERATOR_COLOR;
     
     return view;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    return 0;
+    TSBaseTableBean *bean = _ts_dataArray[section];
+    
+    return bean.sectionHeaderHeight;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     
     UIView *view = [UIView new];
     
-    view.backgroundColor = [UIColor clearColor];
+    view.backgroundColor = SEPERATOR_COLOR;
     
     return view;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    return 0;
+    TSBaseTableBean *bean = _ts_dataArray[section];
+    
+    return bean.sectionFooterHeight;
 }
-- (void)updateData:(id)data {
+- (void)updateData:(NSArray <TSBaseTableBean *>*)data {
     
     [_ts_dataArray removeAllObjects];
     
-    [_ts_dataArray addObjectsFromArray:(NSArray *)data];
+    [_ts_dataArray addObjectsFromArray:data];
     
     [self reloadData];
 }
 
-- (void)appendData:(id)data {
+- (void)appendData:(NSArray <TSBaseTableBean *>*)data {
     
-    [_ts_dataArray addObjectsFromArray:(NSArray *)data];
+    [_ts_dataArray addObjectsFromArray:data];
     
     [self reloadData];
 }
-- (void)updateData:(id)data forIndexPath:(NSIndexPath *)indexPath {
+- (void)updateData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
     [_ts_dataArray replaceObjectAtIndex:indexPath.section withObject:data];
     
@@ -137,31 +147,31 @@
     
     [self performDelay];
 }
-- (void)deleteData:(id)data forIndexPath:(NSIndexPath *)indexPath {
+- (void)deleteData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
     [_ts_dataArray removeObjectAtIndex:indexPath.section];
     
     [self deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
     
-    [self performDelay];
+    //    [self performDelay];
 }
-- (void)insertData:(id)data forIndexPath:(NSIndexPath *)indexPath {
+- (void)insertData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
     [_ts_dataArray insertObject:data atIndex:indexPath.section];
     
     [self insertSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
     
-    [self performDelay];
+    //    [self performDelay];
 }
-- (id)queryDataFor:(NSIndexPath *)indexPath {
+- (TSBaseTableBean *)queryDataFor:(NSIndexPath *)indexPath {
     
     return _ts_dataArray[indexPath.section];
 }
-- (NSArray *)queryAllData {
+- (NSArray <TSBaseTableBean *>*)queryAllData {
     
     return _ts_dataArray;
 }
-- (NSArray *)querySetFor:(NSArray <NSIndexPath *>*)set {
+- (NSArray <TSBaseTableBean *>*)querySetFor:(NSArray <NSIndexPath *>*)set {
     
     NSMutableArray *result = [NSMutableArray array];
     
@@ -172,11 +182,11 @@
     
     return result;
 }
-- (id)queryDataForIdx:(NSInteger)idx {
+- (TSBaseTableBean *)queryDataForIdx:(NSInteger)idx {
     
     return _ts_dataArray[idx];
 }
-- (NSArray *)queryDataForIdxs:(NSArray *)idxs {
+- (NSArray <TSBaseTableBean *>*)queryDataForIdxs:(NSArray *)idxs {
     
     NSMutableArray *result = [NSMutableArray array];
     
@@ -192,6 +202,11 @@
 - (NSInteger)dataCount {
     
     return _ts_dataArray.count;
+}
+
+- (NSIndexPath *)queryDataForIndexPath:(TSBaseTableBean *)data {
+    
+    return [NSIndexPath indexPathForRow:0 inSection:[_ts_dataArray indexOfObject:data]];
 }
 - (void)performDelay {
     
