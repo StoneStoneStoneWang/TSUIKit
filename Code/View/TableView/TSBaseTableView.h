@@ -22,7 +22,7 @@
 @property (nonatomic ,weak) id<TSBaseTableViewDelegate> mDelegate;
 
 #pragma mark --- 数据源
-@property (nonatomic ,strong ,readonly) NSMutableArray *ts_dataArray;
+@property (nonatomic ,strong ,readonly) NSMutableArray <TSBaseTableBean *>*ts_dataArray;
 
 + (instancetype)getInstance_t;
 

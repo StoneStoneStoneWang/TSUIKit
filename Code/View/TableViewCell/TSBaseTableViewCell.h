@@ -22,4 +22,6 @@
 
 //@property (nonatomic ,strong) NSIndexPath *indexPath;  // 弃用
 - (void)updateViewData:(TSBaseTableBean *)data;
+
+- (void)commitInit;
 @end

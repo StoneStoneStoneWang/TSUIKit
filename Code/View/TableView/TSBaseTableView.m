@@ -11,7 +11,7 @@
 #import "TSBaseTableViewCell.h"
 @interface TSBaseTableView()
 
-@property (nonatomic ,strong ,readwrite) NSMutableArray *ts_dataArray;
+@property (nonatomic ,strong ,readwrite) NSMutableArray <TSBaseTableBean *>*ts_dataArray;
 
 @end
 
@@ -76,13 +76,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return _ts_dataArray.count;
+    return self.ts_dataArray.count;
 }
 #pragma mark --- delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TSBaseTableBean *bean = _ts_dataArray[indexPath.section];
+    TSBaseTableBean *bean = self.ts_dataArray[indexPath.section];
     
     return bean.cellHeight;
 }
@@ -93,7 +93,7 @@
     
     if (_mDelegate && [_mDelegate respondsToSelector:@selector(onTableView:forIndexPath:withData:)]) {
         
-        [_mDelegate onTableView:self forIndexPath:indexPath withData:_ts_dataArray[indexPath.section]];
+        [_mDelegate onTableView:self forIndexPath:indexPath withData:self.ts_dataArray[indexPath.section]];
     }
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -106,7 +106,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    TSBaseTableBean *bean = _ts_dataArray[section];
+    TSBaseTableBean *bean = self.ts_dataArray[section];
     
     return bean.sectionHeaderHeight;
 }
@@ -120,28 +120,28 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    TSBaseTableBean *bean = _ts_dataArray[section];
+    TSBaseTableBean *bean = self.ts_dataArray[section];
     
     return bean.sectionFooterHeight;
 }
 - (void)updateData:(NSArray <TSBaseTableBean *>*)data {
     
-    [_ts_dataArray removeAllObjects];
+    [self.ts_dataArray removeAllObjects];
     
-    [_ts_dataArray addObjectsFromArray:data];
+    [self.ts_dataArray addObjectsFromArray:data];
     
     [self reloadData];
 }
 
 - (void)appendData:(NSArray <TSBaseTableBean *>*)data {
     
-    [_ts_dataArray addObjectsFromArray:data];
+    [self.ts_dataArray addObjectsFromArray:data];
     
     [self reloadData];
 }
 - (void)updateData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
-    [_ts_dataArray replaceObjectAtIndex:indexPath.section withObject:data];
+    [self.ts_dataArray replaceObjectAtIndex:indexPath.section withObject:data];
     
     [self reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
     
@@ -149,7 +149,7 @@
 }
 - (void)deleteData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
-    [_ts_dataArray removeObjectAtIndex:indexPath.section];
+    [self.ts_dataArray removeObjectAtIndex:indexPath.section];
     
     [self deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
     
@@ -157,7 +157,7 @@
 }
 - (void)insertData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
-    [_ts_dataArray insertObject:data atIndex:indexPath.section];
+    [self.ts_dataArray insertObject:data atIndex:indexPath.section];
     
     [self insertSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
     
@@ -165,11 +165,11 @@
 }
 - (TSBaseTableBean *)queryDataFor:(NSIndexPath *)indexPath {
     
-    return _ts_dataArray[indexPath.section];
+    return self.ts_dataArray[indexPath.section];
 }
 - (NSArray <TSBaseTableBean *>*)queryAllData {
     
-    return _ts_dataArray;
+    return self.ts_dataArray;
 }
 - (NSArray <TSBaseTableBean *>*)querySetFor:(NSArray <NSIndexPath *>*)set {
     
@@ -177,14 +177,14 @@
     
     [set enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        [result addObject: _ts_dataArray[obj.section]];
+        [result addObject: self.ts_dataArray[obj.section]];
     }];
     
     return result;
 }
 - (TSBaseTableBean *)queryDataForIdx:(NSInteger)idx {
     
-    return _ts_dataArray[idx];
+    return self.ts_dataArray[idx];
 }
 - (NSArray <TSBaseTableBean *>*)queryDataForIdxs:(NSArray *)idxs {
     
@@ -194,19 +194,19 @@
         
         NSInteger i = [obj integerValue];
         
-        [result addObject:_ts_dataArray[i]];
+        [result addObject:self.ts_dataArray[i]];
     }];
     
     return result;
 }
 - (NSInteger)dataCount {
     
-    return _ts_dataArray.count;
+    return self.ts_dataArray.count;
 }
 
 - (NSIndexPath *)queryDataForIndexPath:(TSBaseTableBean *)data {
     
-    return [NSIndexPath indexPathForRow:0 inSection:[_ts_dataArray indexOfObject:data]];
+    return [NSIndexPath indexPathForRow:0 inSection:[self.ts_dataArray indexOfObject:data]];
 }
 - (void)performDelay {
     
