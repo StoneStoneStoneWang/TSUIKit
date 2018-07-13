@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+typedef NS_ENUM(NSInteger ,BottomLineType) {
+    
+    BottomLineTypeNormal,
+    
+    BottomLineTypeNone
+};
 @interface TSBaseTableBean : NSObject
 
 @property (nonatomic ,assign) CGFloat cellHeight;
@@ -17,6 +22,6 @@
 
 @property (nonatomic ,assign) CGFloat sectionFooterHeight;
 
-@property (nonatomic ,assign) BOOL isBottomLineShow;
+@property (nonatomic ,assign) BottomLineType lineType;
 
 @end

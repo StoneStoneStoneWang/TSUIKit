@@ -7,14 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSBaseTableBean.h"
 
-typedef NS_ENUM(NSInteger ,BottomLineType) {
-    
-    BottomLineTypeNormal,
-    
-    BottomLineTypeNone
-    
-};
 
 @interface TSBaseTableViewCell : UITableViewCell
 
@@ -27,5 +21,5 @@ typedef NS_ENUM(NSInteger ,BottomLineType) {
 @property (nonatomic ,assign) BottomLineType bottomLineType;
 
 //@property (nonatomic ,strong) NSIndexPath *indexPath;  // 弃用
-
+- (void)updateViewData:(TSBaseTableBean *)data;
 @end

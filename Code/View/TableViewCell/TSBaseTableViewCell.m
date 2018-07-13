@@ -70,6 +70,11 @@
             break;
     }
 }
+
+- (void)updateViewData:(TSBaseTableBean *)data {
+    
+    
+}
 - (void)layoutSubviews {
     [super layoutSubviews];
     
