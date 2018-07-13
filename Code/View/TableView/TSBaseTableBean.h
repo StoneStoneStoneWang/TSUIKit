@@ -16,4 +16,7 @@
 @property (nonatomic ,assign) CGFloat sectionHeaderHeight;
 
 @property (nonatomic ,assign) CGFloat sectionFooterHeight;
+
+@property (nonatomic ,assign) BOOL isBottomLineShow;
+
 @end
