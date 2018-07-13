@@ -48,6 +48,8 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
     self.backgroundColor = [UIColor clearColor];
+    
+    [self.contentView addSubview:self.bottomView];
 }
 - (void)setBottomLineType:(BottomLineType)bottomLineType {
     _bottomLineType = bottomLineType;
