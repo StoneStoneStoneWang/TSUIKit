@@ -14,9 +14,14 @@
 
 - (void)onTableView:(TSBaseTableView *)tableView forIndexPath:(NSIndexPath *)indexPath withData:(TSBaseTableBean *)data;
 
+@optional
+- (void)onScrollViewScroll:(TSBaseTableView *)tableView;
+
 @end
 
 @interface TSBaseTableView : UITableView <UITableViewDelegate,UITableViewDataSource>
+// 不悬浮 属性
+@property (nonatomic ,assign) CGFloat maxSectionHeader;
 
 #pragma mark --- 自定义delegate
 @property (nonatomic ,weak) id<TSBaseTableViewDelegate> mDelegate;

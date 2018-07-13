@@ -64,7 +64,7 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
-//    TSBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@""];
+    //    TSBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@""];
     
     return [UITableViewCell new];
 }
@@ -145,7 +145,7 @@
     
     [self reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:(UITableViewRowAnimationFade)];
     
-    [self performDelay];
+    //    [self performDelay];
 }
 - (void)deleteData:(TSBaseTableBean *)data forIndexPath:(NSIndexPath *)indexPath {
     
@@ -208,6 +208,34 @@
     
     return [NSIndexPath indexPathForRow:0 inSection:[self.ts_dataArray indexOfObject:data]];
 }
+- (void)updateFooter:(id)data {
+    
+    
+}
+- (void)updateHeader:(id)data {
+    
+    
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    if (self.maxSectionHeader) {
+        
+        if(scrollView.contentOffset.y <= self.maxSectionHeader && scrollView.contentOffset.y >= 0) {
+            
+            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0,0);
+            
+        } else if (scrollView.contentOffset.y >= self.maxSectionHeader) {
+            
+            scrollView.contentInset = UIEdgeInsetsMake(-self.maxSectionHeader, 0, 0, 0);
+        }
+    }
+    
+    if (_mDelegate && [_mDelegate respondsToSelector:@selector(onScrollViewScroll:)]) {
+        
+        [_mDelegate onScrollViewScroll:self];
+    }
+}
+
 - (void)performDelay {
     
     [self performSelector:@selector(delay) withObject:nil afterDelay:0.2];

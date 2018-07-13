@@ -81,6 +81,5 @@
     [super layoutSubviews];
     
     self.bottomView.frame = CGRectMake(0, CGRectGetHeight(self.bounds) - 1, CGRectGetWidth(self.bounds), 1);
-    
 }
 @end
