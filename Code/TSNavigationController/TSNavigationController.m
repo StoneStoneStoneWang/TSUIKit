@@ -10,11 +10,39 @@
 #import "TSNaviAnimation.h"
 #import "TSBaseViewController.h"
 #import "TSColorCommon.h"
+#import "UIBarButtonItem+Setting.h"
+
+@interface BackImageBean: NSObject
+
+@property (nonatomic ,copy) NSString *Back_Image;
+
++ (BackImageBean *)instance;
+
+@end
+
+@implementation BackImageBean
+
++ (BackImageBean *)instance {
+    
+    BackImageBean *image = [BackImageBean new];
+    
+    NSDictionary *json = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UMConfig" ofType:@"plist"]];
+    
+    image.Back_Image = json[@"Back_Image"];
+    
+    return image;
+}
+
+@end
+
 @interface TSNavigationController () <UINavigationControllerDelegate,UIGestureRecognizerDelegate>
+
+@property (nonatomic ,strong) BackImageBean *back_Iamge;
 
 @end
 
 @implementation TSNavigationController
+
 + (void)initialize {
     
     [[UINavigationBar appearance] setBarTintColor: [UIColor whiteColor]];
@@ -24,10 +52,17 @@
                                                            NSForegroundColorAttributeName: LEVEL1_COLOR
                                                            }];
 }
+
+- (BackImageBean *)back_Iamge {
+    
+    if (!_back_Iamge) {
+        
+        _back_Iamge = [BackImageBean instance];
+    }
+    return _back_Iamge;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.interactivePopGestureRecognizer.delegate = self;
     
     self.delegate = self;
 }
@@ -37,10 +72,16 @@
     if (self.childViewControllers.count) {
         
         viewController.hidesBottomBarWhenPushed = true;
+        
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:[UIImage imageNamed:self.back_Iamge.Back_Image] andTarget:self andSelector: @selector(pop)];
     }
     [super pushViewController:viewController animated:animated];
 }
 
+- (void)pop {
+    
+    [self popViewControllerAnimated:true];
+}
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     
     return self.viewControllers.count > 1;
@@ -57,7 +98,7 @@
                                                          fromViewController:(TSBaseViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC
 {
-
+    
     if (fromVC.interactivePopTransition != nil)
     {
         TSNaviAnimation *animation = [[TSNaviAnimation alloc] initWithType:operation Duration:0.5];

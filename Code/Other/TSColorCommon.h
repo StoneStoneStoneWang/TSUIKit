@@ -18,6 +18,8 @@
 
 #define LEVERL2_COLOR [UIColor colorWithHexString:@"#666666"]
 
+#define LEVERL3_COLOR [UIColor colorWithHexString:@"#999999"]
+
 #define BACKGROUND_COLOR [UIColor colorWithHexString:@"#f8f8f8"]
 
 #define SEPERATOR_COLOR [UIColor colorWithHexString:@"#eeeeee"]

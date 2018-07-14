@@ -9,5 +9,5 @@ target 'TSUIKit' do
 # pod 'TFKit',:git=>'/Users/threestonewang/Desktop/TFKit'
 #pod 'TS_UIKit',:git=>'https://github.com/StoneStoneStoneWang/TSUIKit.git'
 
-
+pod 'JXTAlertManager'
 end

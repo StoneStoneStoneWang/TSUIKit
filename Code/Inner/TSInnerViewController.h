@@ -8,7 +8,8 @@
 
 #import "TSBaseViewController.h"
 #import <WebKit/WebKit.h>
-@interface TSInnerViewController : TSBaseViewController
+#import "TSLoadingViewController.h"
+@interface TSInnerViewController : TSLoadingViewController
 
 @property (nonatomic ,strong ,readonly) WKWebView *webView;
 #pragma mark --- 设置webview 不能放大缩小

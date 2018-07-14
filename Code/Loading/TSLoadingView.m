@@ -17,7 +17,7 @@
 
 @implementation LoadingImageBean
 
-+ (LoadingImageBean *)instance{
++ (LoadingImageBean *)instance {
     
     LoadingImageBean *image = [LoadingImageBean new];
     

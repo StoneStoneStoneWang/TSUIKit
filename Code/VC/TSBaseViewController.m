@@ -27,10 +27,10 @@
     
 #pragma mark ---- 如果不是通过xib加载的 取消 第一个检查器 use trait variations勾选
     
-    if (self.navigationController ) {
-        
-        self.navigationController.navigationBar.translucent = false;
-    }
+//    if (self.navigationController ) {
+//
+//        self.navigationController.navigationBar.translucent = false;
+//    }
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     

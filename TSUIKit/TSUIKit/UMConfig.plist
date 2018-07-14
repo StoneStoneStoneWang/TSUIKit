@@ -4,5 +4,7 @@
 <dict>
 	<key>Loading_Image</key>
 	<string>Loading_Image</string>
+	<key>Back_Image</key>
+	<string>Back_Image</string>
 </dict>
 </plist>

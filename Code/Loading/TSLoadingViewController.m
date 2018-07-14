@@ -18,6 +18,14 @@
 
 @implementation TSLoadingViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.loadingStatus = LoadingStatusBegin;
+    
+    self.loadingStatus = LoadingStatusLoading;
+}
+
 - (TSLoadingView *)loadingView {
     
     if (!_loadingView) {
