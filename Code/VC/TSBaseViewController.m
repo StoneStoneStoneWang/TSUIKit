@@ -118,16 +118,7 @@
     // MARK: do something in subclass
     
 }
-- (void)phoneCall:(NSString *)phone {
-    
-    UIWebView *webView = [[UIWebView alloc] initWithFrame: self.view.bounds];
-    
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phone]];
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    [webView loadRequest: request];
-}
+
 - (void)addPanGesture {
     
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)

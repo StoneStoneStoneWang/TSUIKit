@@ -37,6 +37,6 @@
 
 #pragma mark --- phone call
 
-- (void)phoneCall:(NSString *)phone;
+- (void)call:(NSString *)phone;
 
 @end
