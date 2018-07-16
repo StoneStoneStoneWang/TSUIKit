@@ -27,10 +27,10 @@
     
 #pragma mark ---- 如果不是通过xib加载的 取消 第一个检查器 use trait variations勾选
     
-//    if (self.navigationController ) {
-//
-//        self.navigationController.navigationBar.translucent = false;
-//    }
+    //    if (self.navigationController ) {
+    //
+    //        self.navigationController.navigationBar.translucent = false;
+    //    }
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
@@ -201,6 +201,11 @@
     [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"WebKitCacheModelPreferenceKey"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    
+    [self.view endEditing:true];
 }
 @end
 // vc 只做 请求数据 事件处理
