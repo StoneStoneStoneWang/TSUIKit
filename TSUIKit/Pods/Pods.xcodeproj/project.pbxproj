@@ -7,63 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18E156426356D251EFDFC43FFF0FA1A9 /* Pods-TSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091CF2301A38B51219265A95CCC84810 /* Pods-TSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		394F1853117AE70AC2F0823380E029EB /* Pods-TSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2042996539CBFAE3A23F989230442A37 /* Pods-TSUIKit-dummy.m */; };
-		47F281B31358FD9C90F9D5DE8654C9D7 /* JXTAlertManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E20CBFD8AE72446B7DE123BC4B2E335D /* JXTAlertManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76A499CBE4A81E9D589963F8AB410E2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		77B6B0321DA24A9C4B6BD7D9F4FF3316 /* JXTAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F604C637142D267755671269CCDF553 /* JXTAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		871194092A663C6A717941B84340D09B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		93688B5E4F8F0CD23A824FE51A41A4D5 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B7EE1255FA43AB04F09EAC253D7FAC /* JXTAlertController.m */; };
-		99EE5B65E96D44A55BF735C19AE17B20 /* JXTAlertManagerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FCA634BF4288B63ED31DAE99966088 /* JXTAlertManagerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2CBDFDC6660DFC1DBBCE1947A06ECEB /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7F7E5787BF935B6A2E97F2EF01785 /* JXTAlertView.m */; };
-		C8966FE3807C31DD84E60DD6FCB9626D /* JXTAlertManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81795FF6BD0EDBA5D964BF03E017A8BB /* JXTAlertManager-dummy.m */; };
-		ED72CB897CE14B1CEC27E9AEB1AA8A42 /* JXTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ACF7CBCE2B7227AF7FEC4E68AEFD37B /* JXTAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B93D002626C56E87CD22DF34728B52D /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7F6234BED2F0C745CE250B63DE419 /* SVRadialGradientLayer.m */; };
+		2EE4FFD540339E2A953B23388D452CE1 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B42A81DCC679E12637A12D95CA7FF36F /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39D8CD8FAA4E6A26160DBA1F37E8373E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9860D465F287BBA2B6C0146016B76C7 /* SVIndefiniteAnimatedView.m */; };
+		3B0E88CF27B638E11AE5F9272061B65B /* Pods-TSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091CF2301A38B51219265A95CCC84810 /* Pods-TSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F281B31358FD9C90F9D5DE8654C9D7 /* JXTAlertManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 130667EF086AB6FFF7F9093714B71D25 /* JXTAlertManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49DB74DBEC1A8FED8A770EEDC503C101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		4B46EB3EC2FD19CD2FC1B1D5546A6033 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75A62CC6B74C889FBFF81FEECE0708 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CE2E5E3F723259D09D8587C6A574427 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DC7CBD79489A6D7BC3210476A2CF7 /* SVProgressHUD.bundle */; };
+		5CA6DD0C0B4FE771ACBAD65AC3777F48 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEEB023AD20E5D52A2EE73321244F29 /* SVProgressHUD.m */; };
+		76A499CBE4A81E9D589963F8AB410E2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		77B6B0321DA24A9C4B6BD7D9F4FF3316 /* JXTAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4B693D57C5539CE1FC735390A85EBB /* JXTAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8429BCEEC1F69D1A58E5EBED09E1354D /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FB0E4FFDA8413906095FBDCC8AFE3212 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93688B5E4F8F0CD23A824FE51A41A4D5 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6DAB0606877EE584BE4B5E3E2BD54E /* JXTAlertController.m */; };
+		99EE5B65E96D44A55BF735C19AE17B20 /* JXTAlertManagerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FEED7BDA00A82BF3383DC68A1CB096 /* JXTAlertManagerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D6BCCA2FAF37837B38C405420CCB4EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		A163402C558A086A92B33D4F217447AB /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E596B91C94888D46E616CE5516601C /* SVProgressHUD-dummy.m */; };
+		B2CBDFDC6660DFC1DBBCE1947A06ECEB /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 954735BE87F70AA6BF9100E44E3CD98E /* JXTAlertView.m */; };
+		BEE6D4CC09EFEE7AF52DFF050D304D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		C8966FE3807C31DD84E60DD6FCB9626D /* JXTAlertManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B40E1591C2B3644E981C4BF39C2C7 /* JXTAlertManager-dummy.m */; };
+		D1A7641C36F250FC7253D50B6FC8211C /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF4DCE0A7E9B956E24BCFD4C0ADE811 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD45DF97442939D7A3DB65AF8F1FEE58 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E152E773B6EC268062F23BBFE67E46 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AC05B8364D60C2D8B4EE1BC9B70100 /* Pods-TSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2042996539CBFAE3A23F989230442A37 /* Pods-TSUIKit-dummy.m */; };
+		ED72CB897CE14B1CEC27E9AEB1AA8A42 /* JXTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A0BA184DF7AE3B34B96371E05A5EAF /* JXTAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2407BBB5992464A657C103964FB86A7 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D1449ADD282CD7894E9B4B1613307C /* SVProgressAnimatedView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B6BCCA17E7743593D484216EFF5AC900 /* PBXContainerItemProxy */ = {
+		95DD53AD28DAA1003B717720F0CF05A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D4787C6F55746A163A419EC3A5B27F4;
 			remoteInfo = JXTAlertManager;
 		};
+		ACB5EA70DE4D28A71E2E90EEDDDC35B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88D281D889CFE91DEA7F29A3FB6E19C9;
+			remoteInfo = SVProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		091CF2301A38B51219265A95CCC84810 /* Pods-TSUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSUIKit-umbrella.h"; sourceTree = "<group>"; };
+		0B1959B07C64F18D76168340A798EBBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130667EF086AB6FFF7F9093714B71D25 /* JXTAlertManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTAlertManager-umbrella.h"; sourceTree = "<group>"; };
+		158B40E1591C2B3644E981C4BF39C2C7 /* JXTAlertManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXTAlertManager-dummy.m"; sourceTree = "<group>"; };
+		1BB7F6234BED2F0C745CE250B63DE419 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		1D786473FBCE03C02B89667084E87B42 /* JXTAlertManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JXTAlertManager.modulemap; sourceTree = "<group>"; };
 		2042996539CBFAE3A23F989230442A37 /* Pods-TSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSUIKit-dummy.m"; sourceTree = "<group>"; };
-		3ACF7CBCE2B7227AF7FEC4E68AEFD37B /* JXTAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertView.h; path = JXTAlertManager/AlertView/JXTAlertView.h; sourceTree = "<group>"; };
+		26D60826450A9A1EDC5F7D65021C6606 /* JXTAlertManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTAlertManager-prefix.pch"; sourceTree = "<group>"; };
+		2D1DFCFAA19940F5FA93E41CF7BC561F /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E1041D4712BCC99357B5E889066B5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56FCA634BF4288B63ED31DAE99966088 /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertManagerHeader.h; path = JXTAlertManager/JXTAlertManagerHeader.h; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		720827A39C5B420DAFD8FEA6F6673967 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76C777159F5031F9F82F77CD5D8E8085 /* JXTAlertManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXTAlertManager.framework; path = JXTAlertManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81795FF6BD0EDBA5D964BF03E017A8BB /* JXTAlertManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXTAlertManager-dummy.m"; sourceTree = "<group>"; };
-		8F604C637142D267755671269CCDF553 /* JXTAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertController.h; path = JXTAlertManager/AlertController/JXTAlertController.h; sourceTree = "<group>"; };
+		4C75A62CC6B74C889FBFF81FEECE0708 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BEEB023AD20E5D52A2EE73321244F29 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		70E152E773B6EC268062F23BBFE67E46 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		892C1646EA59E9CC1C201D7E165D5010 /* JXTAlertManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXTAlertManager.xcconfig; sourceTree = "<group>"; };
+		8A6DC7CBD79489A6D7BC3210476A2CF7 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8FD68EC05C3B4C0A7081AA57EC7AE231 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BAB41A20D5D4C017F94D611A8D20575 /* JXTAlertManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JXTAlertManager.modulemap; sourceTree = "<group>"; };
+		954735BE87F70AA6BF9100E44E3CD98E /* JXTAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertView.m; path = JXTAlertManager/AlertView/JXTAlertView.m; sourceTree = "<group>"; };
+		9BF4DCE0A7E9B956E24BCFD4C0ADE811 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		A1519DC488502432CDAAF1CA318C884B /* Pods-TSUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		A822A2CE57B528006ECFD17B5D603CAE /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		A958DD91B54BE0C15049BB68F19290BB /* Pods-TSUIKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSUIKit-resources.sh"; sourceTree = "<group>"; };
-		BCE7F7E5787BF935B6A2E97F2EF01785 /* JXTAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertView.m; path = JXTAlertManager/AlertView/JXTAlertView.m; sourceTree = "<group>"; };
+		A9860D465F287BBA2B6C0146016B76C7 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A9A0BA184DF7AE3B34B96371E05A5EAF /* JXTAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertView.h; path = JXTAlertManager/AlertView/JXTAlertView.h; sourceTree = "<group>"; };
+		A9E596B91C94888D46E616CE5516601C /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		B42A81DCC679E12637A12D95CA7FF36F /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		BC6DAB0606877EE584BE4B5E3E2BD54E /* JXTAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertController.m; path = JXTAlertManager/AlertController/JXTAlertController.m; sourceTree = "<group>"; };
 		C0923B25A5FEDFBC30F1290D7BD4927D /* Pods-TSUIKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSUIKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		C33690C62815BE7925F50A78EF393E0F /* Pods-TSUIKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSUIKit-frameworks.sh"; sourceTree = "<group>"; };
-		C9C5D653A33EB4AF68DD05F8E15AFBD1 /* Pods_TSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSUIKit.framework; path = "Pods-TSUIKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD6124B6AFAA999DBD5412923A6948ED /* JXTAlertManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTAlertManager-prefix.pch"; sourceTree = "<group>"; };
-		D56059B2F8180A394AFB552A00D81792 /* JXTAlertManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXTAlertManager.xcconfig; sourceTree = "<group>"; };
-		E20CBFD8AE72446B7DE123BC4B2E335D /* JXTAlertManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTAlertManager-umbrella.h"; sourceTree = "<group>"; };
+		CB4CF159A2C59A58DD41B8CEFDC61497 /* JXTAlertManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXTAlertManager.framework; path = JXTAlertManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5F690A09C406510324580E681E5EB7 /* Pods_TSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSUIKit.framework; path = "Pods-TSUIKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD37A830EAC92DDE0F91DFD97CECC1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3CF51ED900126CC748E89E0226963B4 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		EBBCCC69DCB2D58FA3BE7DD919AF7223 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		ECF746FD9F5724781342300B8BD3DD42 /* Pods-TSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TSUIKit.modulemap"; sourceTree = "<group>"; };
-		F5B7EE1255FA43AB04F09EAC253D7FAC /* JXTAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertController.m; path = JXTAlertManager/AlertController/JXTAlertController.m; sourceTree = "<group>"; };
+		ED4B693D57C5539CE1FC735390A85EBB /* JXTAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertController.h; path = JXTAlertManager/AlertController/JXTAlertController.h; sourceTree = "<group>"; };
+		F1FEED7BDA00A82BF3383DC68A1CB096 /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertManagerHeader.h; path = JXTAlertManager/JXTAlertManagerHeader.h; sourceTree = "<group>"; };
+		F5D1449ADD282CD7894E9B4B1613307C /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		FB0E4FFDA8413906095FBDCC8AFE3212 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		FF7119E8ACF36FA7AD0737687F3D5BCE /* Pods-TSUIKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSUIKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CAA8CA10827B58557509FFC53D43B091 /* Frameworks */ = {
+		9D927D9C3D8A95D1B9DA9342212B874B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				871194092A663C6A717941B84340D09B /* Foundation.framework in Frameworks */,
+				BEE6D4CC09EFEE7AF52DFF050D304D3E /* Foundation.framework in Frameworks */,
+				9D6BCCA2FAF37837B38C405420CCB4EC /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED5F829AE6CD05E0CF6F24996563429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49DB74DBEC1A8FED8A770EEDC503C101 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,54 +142,119 @@
 			path = "Target Support Files/Pods-TSUIKit";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		328F6C3C87B452F30078FCC395B0A98B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				84ED322C03CCFC5E35897369B5110096 /* Pods */,
-				C34A11A2F21DBD230E9ADA3FAC6F0AAA /* Products */,
-				C7BDBAF0A80C2C0090D8FE332559142D /* Targets Support Files */,
+				0B1959B07C64F18D76168340A798EBBD /* Info.plist */,
+				A822A2CE57B528006ECFD17B5D603CAE /* SVProgressHUD.modulemap */,
+				8FD68EC05C3B4C0A7081AA57EC7AE231 /* SVProgressHUD.xcconfig */,
+				A9E596B91C94888D46E616CE5516601C /* SVProgressHUD-dummy.m */,
+				EBBCCC69DCB2D58FA3BE7DD919AF7223 /* SVProgressHUD-prefix.pch */,
+				B42A81DCC679E12637A12D95CA7FF36F /* SVProgressHUD-umbrella.h */,
 			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		84ED322C03CCFC5E35897369B5110096 /* Pods */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF2A6E11BC564F2F0879C7CEAE11F8DC /* JXTAlertManager */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD1494C1DBB690BEDE1C5530D77055CA /* Support Files */ = {
+		49A685176C9D9BF7AFDCC491CEC00C3C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				720827A39C5B420DAFD8FEA6F6673967 /* Info.plist */,
-				9BAB41A20D5D4C017F94D611A8D20575 /* JXTAlertManager.modulemap */,
-				D56059B2F8180A394AFB552A00D81792 /* JXTAlertManager.xcconfig */,
-				81795FF6BD0EDBA5D964BF03E017A8BB /* JXTAlertManager-dummy.m */,
-				CD6124B6AFAA999DBD5412923A6948ED /* JXTAlertManager-prefix.pch */,
-				E20CBFD8AE72446B7DE123BC4B2E335D /* JXTAlertManager-umbrella.h */,
+				8A6DC7CBD79489A6D7BC3210476A2CF7 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5F725D2562046E0DF44D6CD484F36AB0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFD37A830EAC92DDE0F91DFD97CECC1E /* Info.plist */,
+				1D786473FBCE03C02B89667084E87B42 /* JXTAlertManager.modulemap */,
+				892C1646EA59E9CC1C201D7E165D5010 /* JXTAlertManager.xcconfig */,
+				158B40E1591C2B3644E981C4BF39C2C7 /* JXTAlertManager-dummy.m */,
+				26D60826450A9A1EDC5F7D65021C6606 /* JXTAlertManager-prefix.pch */,
+				130667EF086AB6FFF7F9093714B71D25 /* JXTAlertManager-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/JXTAlertManager";
 			sourceTree = "<group>";
 		};
-		C34A11A2F21DBD230E9ADA3FAC6F0AAA /* Products */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				76C777159F5031F9F82F77CD5D8E8085 /* JXTAlertManager.framework */,
-				C9C5D653A33EB4AF68DD05F8E15AFBD1 /* Pods_TSUIKit.framework */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				89A5EC8F40E6613F44E8189CE25969D9 /* Pods */,
+				81AF490A42FD3971FA5EEDAD70C270AD /* Products */,
+				C7BDBAF0A80C2C0090D8FE332559142D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81AF490A42FD3971FA5EEDAD70C270AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CF159A2C59A58DD41B8CEFDC61497 /* JXTAlertManager.framework */,
+				CB5F690A09C406510324580E681E5EB7 /* Pods_TSUIKit.framework */,
+				2D1DFCFAA19940F5FA93E41CF7BC561F /* SVProgressHUD.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		87897C885E84E89FE7FF191AA564BB89 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4C75A62CC6B74C889FBFF81FEECE0708 /* SVIndefiniteAnimatedView.h */,
+				A9860D465F287BBA2B6C0146016B76C7 /* SVIndefiniteAnimatedView.m */,
+				70E152E773B6EC268062F23BBFE67E46 /* SVProgressAnimatedView.h */,
+				F5D1449ADD282CD7894E9B4B1613307C /* SVProgressAnimatedView.m */,
+				9BF4DCE0A7E9B956E24BCFD4C0ADE811 /* SVProgressHUD.h */,
+				5BEEB023AD20E5D52A2EE73321244F29 /* SVProgressHUD.m */,
+				FB0E4FFDA8413906095FBDCC8AFE3212 /* SVRadialGradientLayer.h */,
+				1BB7F6234BED2F0C745CE250B63DE419 /* SVRadialGradientLayer.m */,
+				49A685176C9D9BF7AFDCC491CEC00C3C /* Resources */,
+				328F6C3C87B452F30078FCC395B0A98B /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		89A5EC8F40E6613F44E8189CE25969D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C46392A3F46AE64C827A9724F37404A9 /* JXTAlertManager */,
+				87897C885E84E89FE7FF191AA564BB89 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
+				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C46392A3F46AE64C827A9724F37404A9 /* JXTAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				ED4B693D57C5539CE1FC735390A85EBB /* JXTAlertController.h */,
+				BC6DAB0606877EE584BE4B5E3E2BD54E /* JXTAlertController.m */,
+				F1FEED7BDA00A82BF3383DC68A1CB096 /* JXTAlertManagerHeader.h */,
+				A9A0BA184DF7AE3B34B96371E05A5EAF /* JXTAlertView.h */,
+				954735BE87F70AA6BF9100E44E3CD98E /* JXTAlertView.m */,
+				5F725D2562046E0DF44D6CD484F36AB0 /* Support Files */,
+			);
+			name = JXTAlertManager;
+			path = JXTAlertManager;
 			sourceTree = "<group>";
 		};
 		C7BDBAF0A80C2C0090D8FE332559142D /* Targets Support Files */ = {
@@ -154,31 +265,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		FF2A6E11BC564F2F0879C7CEAE11F8DC /* JXTAlertManager */ = {
-			isa = PBXGroup;
-			children = (
-				8F604C637142D267755671269CCDF553 /* JXTAlertController.h */,
-				F5B7EE1255FA43AB04F09EAC253D7FAC /* JXTAlertController.m */,
-				56FCA634BF4288B63ED31DAE99966088 /* JXTAlertManagerHeader.h */,
-				3ACF7CBCE2B7227AF7FEC4E68AEFD37B /* JXTAlertView.h */,
-				BCE7F7E5787BF935B6A2E97F2EF01785 /* JXTAlertView.m */,
-				BD1494C1DBB690BEDE1C5530D77055CA /* Support Files */,
-			);
-			name = JXTAlertManager;
-			path = JXTAlertManager;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		07C1C7B070C97B60218ABAF4968AF636 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E88CF27B638E11AE5F9272061B65B /* Pods-TSUIKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CBD564C9857425FCAD6A24049757AE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B46EB3EC2FD19CD2FC1B1D5546A6033 /* SVIndefiniteAnimatedView.h in Headers */,
+				DD45DF97442939D7A3DB65AF8F1FEE58 /* SVProgressAnimatedView.h in Headers */,
+				2EE4FFD540339E2A953B23388D452CE1 /* SVProgressHUD-umbrella.h in Headers */,
+				D1A7641C36F250FC7253D50B6FC8211C /* SVProgressHUD.h in Headers */,
+				8429BCEEC1F69D1A58E5EBED09E1354D /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F82E6368C9A3DCAAE607FB911F33DD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,14 +296,6 @@
 				47F281B31358FD9C90F9D5DE8654C9D7 /* JXTAlertManager-umbrella.h in Headers */,
 				99EE5B65E96D44A55BF735C19AE17B20 /* JXTAlertManagerHeader.h in Headers */,
 				ED72CB897CE14B1CEC27E9AEB1AA8A42 /* JXTAlertView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36EE04EE3F3D46F5E6B545B2B8AB063 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18E156426356D251EFDFC43FFF0FA1A9 /* Pods-TSUIKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,25 +316,44 @@
 			);
 			name = JXTAlertManager;
 			productName = JXTAlertManager;
-			productReference = 76C777159F5031F9F82F77CD5D8E8085 /* JXTAlertManager.framework */;
+			productReference = CB4CF159A2C59A58DD41B8CEFDC61497 /* JXTAlertManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4A6EAE72EAA9A5C2D539621F10CF85F6 /* Pods-TSUIKit */ = {
+		88D281D889CFE91DEA7F29A3FB6E19C9 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB16632EF37873073F5898A6BDE1B77C /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */;
+			buildConfigurationList = FD8CD93E933F31E5ADAC1204103C86CB /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				CC316A8DE79A50BA2A32DC1B4A4B4D2D /* Sources */,
-				CAA8CA10827B58557509FFC53D43B091 /* Frameworks */,
-				B36EE04EE3F3D46F5E6B545B2B8AB063 /* Headers */,
+				C37A399D3F23EAB4D939312F5685266A /* Sources */,
+				9D927D9C3D8A95D1B9DA9342212B874B /* Frameworks */,
+				0CBD564C9857425FCAD6A24049757AE0 /* Headers */,
+				7FAD4C524A2EA038EB3E80D618C63157 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				56C43BF54DEB77D2FFECE958DE9134AF /* PBXTargetDependency */,
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 2D1DFCFAA19940F5FA93E41CF7BC561F /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B129BD28FF7398CB0D3691F46BC12D37 /* Pods-TSUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041DFB5E99BBF0772C326A9DCC7C482A /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */;
+			buildPhases = (
+				8279A2E27DD954097574220718D442D6 /* Sources */,
+				AED5F829AE6CD05E0CF6F24996563429 /* Frameworks */,
+				07C1C7B070C97B60218ABAF4968AF636 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70242DC730FA365BAD9BC13B60EA9AA5 /* PBXTargetDependency */,
+				3AF0D5C4660683CEB3203AE9A579E642 /* PBXTargetDependency */,
 			);
 			name = "Pods-TSUIKit";
 			productName = "Pods-TSUIKit";
-			productReference = C9C5D653A33EB4AF68DD05F8E15AFBD1 /* Pods_TSUIKit.framework */;
+			productReference = CB5F690A09C406510324580E681E5EB7 /* Pods_TSUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -253,15 +373,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C34A11A2F21DBD230E9ADA3FAC6F0AAA /* Products */;
+			productRefGroup = 81AF490A42FD3971FA5EEDAD70C270AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2D4787C6F55746A163A419EC3A5B27F4 /* JXTAlertManager */,
-				4A6EAE72EAA9A5C2D539621F10CF85F6 /* Pods-TSUIKit */,
+				B129BD28FF7398CB0D3691F46BC12D37 /* Pods-TSUIKit */,
+				88D281D889CFE91DEA7F29A3FB6E19C9 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FAD4C524A2EA038EB3E80D618C63157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE2E5E3F723259D09D8587C6A574427 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		030DD051B226BC4482989FD58F719B63 /* Sources */ = {
@@ -274,29 +406,109 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC316A8DE79A50BA2A32DC1B4A4B4D2D /* Sources */ = {
+		8279A2E27DD954097574220718D442D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				394F1853117AE70AC2F0823380E029EB /* Pods-TSUIKit-dummy.m in Sources */,
+				E5AC05B8364D60C2D8B4EE1BC9B70100 /* Pods-TSUIKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37A399D3F23EAB4D939312F5685266A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D8CD8FAA4E6A26160DBA1F37E8373E /* SVIndefiniteAnimatedView.m in Sources */,
+				F2407BBB5992464A657C103964FB86A7 /* SVProgressAnimatedView.m in Sources */,
+				A163402C558A086A92B33D4F217447AB /* SVProgressHUD-dummy.m in Sources */,
+				5CA6DD0C0B4FE771ACBAD65AC3777F48 /* SVProgressHUD.m in Sources */,
+				1B93D002626C56E87CD22DF34728B52D /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		56C43BF54DEB77D2FFECE958DE9134AF /* PBXTargetDependency */ = {
+		3AF0D5C4660683CEB3203AE9A579E642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 88D281D889CFE91DEA7F29A3FB6E19C9 /* SVProgressHUD */;
+			targetProxy = ACB5EA70DE4D28A71E2E90EEDDDC35B4 /* PBXContainerItemProxy */;
+		};
+		70242DC730FA365BAD9BC13B60EA9AA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JXTAlertManager;
 			target = 2D4787C6F55746A163A419EC3A5B27F4 /* JXTAlertManager */;
-			targetProxy = B6BCCA17E7743593D484216EFF5AC900 /* PBXContainerItemProxy */;
+			targetProxy = 95DD53AD28DAA1003B717720F0CF05A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02FCE3E25ADC57AA05B7A96AB6720D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1519DC488502432CDAAF1CA318C884B /* Pods-TSUIKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSUIKit/Pods-TSUIKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04C19E07515103C90656C2A0393B446F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD68EC05C3B4C0A7081AA57EC7AE231 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2D3312CF53C1025F310A8E73CF4FB727 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D56059B2F8180A394AFB552A00D81792 /* JXTAlertManager.xcconfig */;
+			baseConfigurationReference = 892C1646EA59E9CC1C201D7E165D5010 /* JXTAlertManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -379,9 +591,38 @@
 			};
 			name = Release;
 		};
+		81FD855C60BB7297F12DAE1783C2E805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD68EC05C3B4C0A7081AA57EC7AE231 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9B52E79865AB8EB0E2819CE763DA18ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D56059B2F8180A394AFB552A00D81792 /* JXTAlertManager.xcconfig */;
+			baseConfigurationReference = 892C1646EA59E9CC1C201D7E165D5010 /* JXTAlertManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -407,39 +648,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		AE5480587854FB8050F6CF64F5F1E2D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3CF51ED900126CC748E89E0226963B4 /* Pods-TSUIKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TSUIKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TSUIKit/Pods-TSUIKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TSUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -501,9 +709,9 @@
 			};
 			name = Debug;
 		};
-		B75A3732B89139FBA5E0110DDAA7E1E0 /* Debug */ = {
+		D0E3A35D3C72B8291D341A6652EFFA28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1519DC488502432CDAAF1CA318C884B /* Pods-TSUIKit.debug.xcconfig */;
+			baseConfigurationReference = E3CF51ED900126CC748E89E0226963B4 /* Pods-TSUIKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -528,14 +736,24 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		041DFB5E99BBF0772C326A9DCC7C482A /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FCE3E25ADC57AA05B7A96AB6720D55 /* Debug */,
+				D0E3A35D3C72B8291D341A6652EFFA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -554,11 +772,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB16632EF37873073F5898A6BDE1B77C /* Build configuration list for PBXNativeTarget "Pods-TSUIKit" */ = {
+		FD8CD93E933F31E5ADAC1204103C86CB /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B75A3732B89139FBA5E0110DDAA7E1E0 /* Debug */,
-				AE5480587854FB8050F6CF64F5F1E2D8 /* Release */,
+				81FD855C60BB7297F12DAE1783C2E805 /* Debug */,
+				04C19E07515103C90656C2A0393B446F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

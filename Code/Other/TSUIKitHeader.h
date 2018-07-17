@@ -48,3 +48,7 @@ _Pragma("clang diagnostic pop")
 #import "TSBaseTableBean.h"
 
 #import <JXTAlertManager/JXTAlertManagerHeader.h>
+
+#import "SVProgressHUD.h"
+
+#import "HUDUtil.h"

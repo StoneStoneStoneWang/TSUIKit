@@ -179,7 +179,7 @@
     
     self.phoneWebView.delegate = self;
     
-    NSURL *url = [NSURL URLWithString:phone];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phone]];
     
     [self.phoneWebView loadRequest: [NSURLRequest requestWithURL:url]];
 }

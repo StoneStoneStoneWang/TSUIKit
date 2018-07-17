@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "NoNaviViewController.h"
 #import "TSNavigationController.h"
+#import "HUDUtil.h"
 @interface AppDelegate ()
 
 @end
@@ -26,6 +27,7 @@
     
     [self.window makeKeyAndVisible];
     
+    [[HUDUtil shared] configHud];
     return YES;
 }
 

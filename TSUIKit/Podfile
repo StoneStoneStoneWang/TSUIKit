@@ -10,4 +10,6 @@ target 'TSUIKit' do
 #pod 'TS_UIKit',:git=>'https://github.com/StoneStoneStoneWang/TSUIKit.git'
 
 pod 'JXTAlertManager'
+
+pod 'SVProgressHUD'
 end

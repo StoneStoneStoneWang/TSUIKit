@@ -15,6 +15,7 @@
 		6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033F20D0C7620029AFAB /* UINavigationController+Orientation.m */; };
 		6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */; };
 		6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */; };
+		6C4E937920FDE3F100B0BCBE /* HUDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E937820FDE3F100B0BCBE /* HUDUtil.m */; };
 		6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */; };
 		6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */; };
 		6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */; };
@@ -86,6 +87,9 @@
 		6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Orientation.m"; sourceTree = "<group>"; };
 		6C4D034920D0E8A90029AFAB /* UIViewController+StatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StatusBar.h"; sourceTree = "<group>"; };
 		6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StatusBar.m"; sourceTree = "<group>"; };
+		6C4E937520FDE37400B0BCBE /* TS_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TS_UIKit.h; sourceTree = "<group>"; };
+		6C4E937720FDE3F100B0BCBE /* HUDUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDUtil.h; sourceTree = "<group>"; };
+		6C4E937820FDE3F100B0BCBE /* HUDUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDUtil.m; sourceTree = "<group>"; };
 		6C639B0620F4358900BFBFE2 /* TSBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableView.h; sourceTree = "<group>"; };
 		6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableView.m; sourceTree = "<group>"; };
 		6C639B0A20F4A43E00BFBFE2 /* TSInnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInnerViewController.h; sourceTree = "<group>"; };
@@ -204,6 +208,15 @@
 				6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */,
 			);
 			path = "UIViewController+StatusBar";
+			sourceTree = "<group>";
+		};
+		6C4E937620FDE3E200B0BCBE /* HUDUtil */ = {
+			isa = PBXGroup;
+			children = (
+				6C4E937720FDE3F100B0BCBE /* HUDUtil.h */,
+				6C4E937820FDE3F100B0BCBE /* HUDUtil.m */,
+			);
+			path = HUDUtil;
 			sourceTree = "<group>";
 		};
 		6C639B0520F4358900BFBFE2 /* TableView */ = {
@@ -328,6 +341,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C4E937620FDE3E200B0BCBE /* HUDUtil */,
 				6CE4E87720FA657F00901F47 /* BarButtonItem */,
 				6CE4E86F20FA588B00901F47 /* PhoneShow */,
 				6C813D4D20F7AC5800C8FC13 /* UITabController+AddChild */,
@@ -360,6 +374,7 @@
 			children = (
 				6C813D5120F7AF6E00C8FC13 /* TSColorCommon.h */,
 				6C813D5720F7C17400C8FC13 /* TSUIKitHeader.h */,
+				6C4E937520FDE37400B0BCBE /* TS_UIKit.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -635,10 +650,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXTAlertManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -655,6 +672,7 @@
 				6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */,
 				6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */,
 				6CCD009020F73FA9008E3E23 /* XibViewController.m in Sources */,
+				6C4E937920FDE3F100B0BCBE /* HUDUtil.m in Sources */,
 				6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */,
 				6CE4E87220FA58A400901F47 /* UIViewController+PhoneShow.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
