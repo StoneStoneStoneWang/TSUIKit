@@ -41,6 +41,8 @@
     
     [btn setTitleColor:highColor forState:UIControlStateHighlighted];
     
+    btn.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    
     [btn sizeToFit];
     
     [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
