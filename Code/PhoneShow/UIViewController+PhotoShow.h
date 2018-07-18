@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "TSUIKitHeader.h"
-@interface UIViewController (PhoneShow) <UINavigationControllerDelegate ,UIImagePickerControllerDelegate>
+@interface UIViewController (PhotoShow) <UINavigationControllerDelegate ,UIImagePickerControllerDelegate>
 
 @property (nonatomic ,strong) UIImagePickerController *imageicker;
 

@@ -6,9 +6,9 @@
 //  Copyright © 2018年 three stone 王. All rights reserved.
 //
 
-#import "UIViewController+PhoneShow.h"
+#import "UIViewController+PhotoShow.h"
 #import <objc/runtime.h>
-@implementation UIViewController (PhoneShow)
+@implementation UIViewController (PhotoShow)
 - (void)setImageicker:(UIImagePickerController *)imageicker {
     
     objc_setAssociatedObject(self, @"imageicker", imageicker, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -47,17 +47,22 @@
     
     if (!self.imageicker) {
         
-        if ([UIImagePickerController isSourceTypeAvailable:(UIImagePickerControllerSourceTypeCamera)]) {
-            
-            self.imageicker.delegate = self;
-            
-            self.imageicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-            
-            [self presentViewController:self.imageicker animated:true completion:nil];
-        } else {
-            
-            NSLog(@"模拟器中无法打开相机");
-        }
+        self.imageicker = [UIImagePickerController new];
+        
+        self.imageicker.allowsEditing = true;
+        
+        self.imageicker.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    }
+    if ([UIImagePickerController isSourceTypeAvailable:(UIImagePickerControllerSourceTypeCamera)]) {
+        
+        self.imageicker.delegate = self;
+        
+        self.imageicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        [self presentViewController:self.imageicker animated:true completion:nil];
+    } else {
+        
+        NSLog(@"模拟器中无法打开相机");
     }
 }
 
@@ -65,12 +70,17 @@
     
     if (!self.imageicker) {
         
-        self.imageicker.delegate = self;
+        self.imageicker = [UIImagePickerController new];
         
-        self.imageicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.imageicker.allowsEditing = true;
         
-        [self presentViewController:self.imageicker animated:true completion:nil];
+        self.imageicker.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     }
+    self.imageicker.delegate = self;
+    
+    self.imageicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:self.imageicker animated:true completion:nil];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     

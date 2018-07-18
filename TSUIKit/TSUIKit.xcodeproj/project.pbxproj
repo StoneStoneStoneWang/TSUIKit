@@ -48,7 +48,7 @@
 		6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244620EA060400D15132 /* NoNaviViewController.m */; };
 		6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244820EA060400D15132 /* VideoBroadViewController.m */; };
 		6CE1244E20EA060400D15132 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1244A20EA060400D15132 /* VideoViewController.m */; };
-		6CE4E87220FA58A400901F47 /* UIViewController+PhoneShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4E87120FA58A400901F47 /* UIViewController+PhoneShow.m */; };
+		6CE4E87220FA58A400901F47 /* UIViewController+PhotoShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4E87120FA58A400901F47 /* UIViewController+PhotoShow.m */; };
 		6CE4E87A20FA657F00901F47 /* UIBarButtonItem+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4E87920FA657F00901F47 /* UIBarButtonItem+Setting.m */; };
 		C900AEED28076A7ED45C36E2 /* Pods_TSUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A52963AD94FFA859695AF4A /* Pods_TSUIKit.framework */; };
 /* End PBXBuildFile section */
@@ -157,8 +157,8 @@
 		6CE1244820EA060400D15132 /* VideoBroadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBroadViewController.m; sourceTree = "<group>"; };
 		6CE1244920EA060400D15132 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		6CE1244A20EA060400D15132 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		6CE4E87020FA58A400901F47 /* UIViewController+PhoneShow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PhoneShow.h"; sourceTree = "<group>"; };
-		6CE4E87120FA58A400901F47 /* UIViewController+PhoneShow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PhoneShow.m"; sourceTree = "<group>"; };
+		6CE4E87020FA58A400901F47 /* UIViewController+PhotoShow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PhotoShow.h"; sourceTree = "<group>"; };
+		6CE4E87120FA58A400901F47 /* UIViewController+PhotoShow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PhotoShow.m"; sourceTree = "<group>"; };
 		6CE4E87820FA657F00901F47 /* UIBarButtonItem+Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Setting.h"; sourceTree = "<group>"; };
 		6CE4E87920FA657F00901F47 /* UIBarButtonItem+Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Setting.m"; sourceTree = "<group>"; };
 		7C69E90C586C132E57FA1726 /* Pods-TSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -465,8 +465,8 @@
 		6CE4E86F20FA588B00901F47 /* PhoneShow */ = {
 			isa = PBXGroup;
 			children = (
-				6CE4E87020FA58A400901F47 /* UIViewController+PhoneShow.h */,
-				6CE4E87120FA58A400901F47 /* UIViewController+PhoneShow.m */,
+				6CE4E87020FA58A400901F47 /* UIViewController+PhotoShow.h */,
+				6CE4E87120FA58A400901F47 /* UIViewController+PhotoShow.m */,
 			);
 			path = PhoneShow;
 			sourceTree = "<group>";
@@ -698,7 +698,7 @@
 				6C4E93D120FF308A00B0BCBE /* TSBottomUpTransition.m in Sources */,
 				6C4E937920FDE3F100B0BCBE /* HUDUtil.m in Sources */,
 				6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */,
-				6CE4E87220FA58A400901F47 /* UIViewController+PhoneShow.m in Sources */,
+				6CE4E87220FA58A400901F47 /* UIViewController+PhotoShow.m in Sources */,
 				6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */,
 				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,
 				6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */,

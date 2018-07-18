@@ -52,3 +52,5 @@ _Pragma("clang diagnostic pop")
 #import "SVProgressHUD.h"
 
 #import "HUDUtil.h"
+
+#import "UIViewController+PhotoShow.h"
