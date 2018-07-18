@@ -16,6 +16,9 @@
 		6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */; };
 		6C4D034B20D0E8A90029AFAB /* UIViewController+StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034A20D0E8A90029AFAB /* UIViewController+StatusBar.m */; };
 		6C4E937920FDE3F100B0BCBE /* HUDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E937820FDE3F100B0BCBE /* HUDUtil.m */; };
+		6C4E93CF20FF308A00B0BCBE /* TSBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E93CA20FF308900B0BCBE /* TSBaseTransition.m */; };
+		6C4E93D020FF308A00B0BCBE /* TSBaseTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E93CC20FF308900B0BCBE /* TSBaseTransitionViewController.m */; };
+		6C4E93D120FF308A00B0BCBE /* TSBottomUpTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E93CE20FF308900B0BCBE /* TSBottomUpTransition.m */; };
 		6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */; };
 		6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0B20F4A43E00BFBFE2 /* TSInnerViewController.m */; };
 		6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C639B0F20F4ADC700BFBFE2 /* TSLoadingViewController.m */; };
@@ -90,6 +93,12 @@
 		6C4E937520FDE37400B0BCBE /* TS_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TS_UIKit.h; sourceTree = "<group>"; };
 		6C4E937720FDE3F100B0BCBE /* HUDUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDUtil.h; sourceTree = "<group>"; };
 		6C4E937820FDE3F100B0BCBE /* HUDUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDUtil.m; sourceTree = "<group>"; };
+		6C4E93C920FF308900B0BCBE /* TSBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTransition.h; sourceTree = "<group>"; };
+		6C4E93CA20FF308900B0BCBE /* TSBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTransition.m; sourceTree = "<group>"; };
+		6C4E93CB20FF308900B0BCBE /* TSBaseTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTransitionViewController.h; sourceTree = "<group>"; };
+		6C4E93CC20FF308900B0BCBE /* TSBaseTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTransitionViewController.m; sourceTree = "<group>"; };
+		6C4E93CD20FF308900B0BCBE /* TSBottomUpTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBottomUpTransition.h; sourceTree = "<group>"; };
+		6C4E93CE20FF308900B0BCBE /* TSBottomUpTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBottomUpTransition.m; sourceTree = "<group>"; };
 		6C639B0620F4358900BFBFE2 /* TSBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableView.h; sourceTree = "<group>"; };
 		6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableView.m; sourceTree = "<group>"; };
 		6C639B0A20F4A43E00BFBFE2 /* TSInnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInnerViewController.h; sourceTree = "<group>"; };
@@ -219,6 +228,19 @@
 			path = HUDUtil;
 			sourceTree = "<group>";
 		};
+		6C4E93C820FF308900B0BCBE /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				6C4E93C920FF308900B0BCBE /* TSBaseTransition.h */,
+				6C4E93CA20FF308900B0BCBE /* TSBaseTransition.m */,
+				6C4E93CB20FF308900B0BCBE /* TSBaseTransitionViewController.h */,
+				6C4E93CC20FF308900B0BCBE /* TSBaseTransitionViewController.m */,
+				6C4E93CD20FF308900B0BCBE /* TSBottomUpTransition.h */,
+				6C4E93CE20FF308900B0BCBE /* TSBottomUpTransition.m */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
 		6C639B0520F4358900BFBFE2 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +363,7 @@
 		6CA172FE20D0C45800F2F339 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C4E93C820FF308900B0BCBE /* Present */,
 				6C4E937620FDE3E200B0BCBE /* HUDUtil */,
 				6CE4E87720FA657F00901F47 /* BarButtonItem */,
 				6CE4E86F20FA588B00901F47 /* PhoneShow */,
@@ -672,6 +695,7 @@
 				6C639B0C20F4A43E00BFBFE2 /* TSInnerViewController.m in Sources */,
 				6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */,
 				6CCD009020F73FA9008E3E23 /* XibViewController.m in Sources */,
+				6C4E93D120FF308A00B0BCBE /* TSBottomUpTransition.m in Sources */,
 				6C4E937920FDE3F100B0BCBE /* HUDUtil.m in Sources */,
 				6C639B1320F4AE3600BFBFE2 /* TSLoadingView.m in Sources */,
 				6CE4E87220FA58A400901F47 /* UIViewController+PhoneShow.m in Sources */,
@@ -683,11 +707,13 @@
 				6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6C813D7620F8352100C8FC13 /* TSBaseTableBean.m in Sources */,
 				6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */,
+				6C4E93CF20FF308A00B0BCBE /* TSBaseTransition.m in Sources */,
 				6CA172DA20D0C38900F2F339 /* main.m in Sources */,
 				6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */,
 				6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */,
 				6C813D7320F8329700C8FC13 /* TSBaseTableViewCell.m in Sources */,
 				6CCD009B20F762C4008E3E23 /* JTZCircleDetailViewController.m in Sources */,
+				6C4E93D020FF308A00B0BCBE /* TSBaseTransitionViewController.m in Sources */,
 				6C639B1020F4ADC700BFBFE2 /* TSLoadingViewController.m in Sources */,
 				6CA1730420D0C49500F2F339 /* TSBaseViewController.m in Sources */,
 				6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */,
