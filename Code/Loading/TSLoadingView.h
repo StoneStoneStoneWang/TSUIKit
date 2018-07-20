@@ -20,6 +20,13 @@ typedef NS_ENUM(NSInteger,LoadingStatus) {
     
     LoadingStatusReload
 };
+
+@protocol TSLoadingViewDelegate <NSObject>
+
+- (void)onReloadItemClick;
+
+@end
+
 @interface TSLoadingView : UIView
 
 + (instancetype)loadingWithContentViewController:(TSBaseViewController *)contentViewController;
@@ -38,4 +45,5 @@ typedef NS_ENUM(NSInteger,LoadingStatus) {
 
 - (void)changeLoadingStatus:(LoadingStatus )status;
 
+@property (nonatomic ,weak) id<TSLoadingViewDelegate> mDelegate;
 @end

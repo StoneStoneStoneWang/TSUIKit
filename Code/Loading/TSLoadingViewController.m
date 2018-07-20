@@ -8,7 +8,7 @@
 
 #import "TSLoadingViewController.h"
 
-@interface TSLoadingViewController ()
+@interface TSLoadingViewController () <TSLoadingViewDelegate >
 {
     
     
@@ -31,6 +31,8 @@
     if (!_loadingView) {
         
         _loadingView = [TSLoadingView loadingWithContentViewController:self];
+        
+        _loadingView.mDelegate = self;
     }
     return _loadingView;
 }
@@ -44,5 +46,10 @@
     _loadingStatus = loadingStatus;
     
     [self.loadingView changeLoadingStatus:loadingStatus];
+    
+}
+- (void)onReloadItemClick {
+    
+    [self prepareData];
 }
 @end

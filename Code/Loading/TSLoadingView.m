@@ -69,7 +69,7 @@
         
         _backgroundItem = [UIButton buttonWithType:UIButtonTypeCustom];
         
-        [_backgroundItem addTarget:self action:@selector(onReload) forControlEvents:UIControlEventTouchUpInside];
+        [_backgroundItem addTarget:self action:@selector(onReloadItemClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
@@ -150,7 +150,7 @@
     _iconImageView.frame = CGRectMake(0, 0, 100, 100);
     
     _iconImageView.center = CGPointMake(w / 2, (h - 64) / 2 - 100);
-
+    
     _reloadLabel.frame = CGRectMake(0, (h - 64) / 2, w, 40);
     
     _reloadLabel.text = @"点击屏幕 重新加载";
@@ -162,6 +162,16 @@
     _reloadLabel.textAlignment = NSTextAlignmentCenter;
     
     [self addSubview:_reloadLabel];
+}
+- (void)onReloadItemClick {
+    
+    [self onReload];
+    
+    if (_mDelegate && [_mDelegate respondsToSelector:@selector(onReloadItemClick)]) {
+        
+        [_mDelegate onReloadItemClick];
+    }
+    
 }
 - (void)onLoading {
     

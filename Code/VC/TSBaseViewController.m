@@ -107,7 +107,7 @@
     
     // MARK: do something in subclass
     
-    self.view.backgroundColor = BACKGROUND_COLOR;
+    self.view.backgroundColor = SEPERATOR_COLOR;
 }
 - (void)addOwnSubVC {
     

@@ -14,4 +14,7 @@
 
 @property (nonatomic ,assign) LoadingStatus loadingStatus;
 
+// 重新加载
+- (void)onReloadItemClick;
+
 @end

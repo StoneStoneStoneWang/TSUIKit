@@ -19,7 +19,7 @@
 }
 - (void)photoActionShow {
     
-    __weak typeof(self) weakSelf = self;
+    __weak __typeof__(self) weakSelf = self;
     
     [self jxt_showActionSheetWithTitle:@"选取图片"
                                message:@""
@@ -30,7 +30,7 @@
                          addActionCancelTitle(@"相册");
                      } actionsBlock:^(NSInteger buttonIndex, UIAlertAction * _Nonnull action, JXTAlertController * _Nonnull alertSelf) {
                          
-                         __strong typeof(weakSelf) strongSelf = weakSelf;
+                         __strong __typeof__(weakSelf) strongSelf = weakSelf;
                          
                          if ([action.title isEqualToString:@"取消"]) {
                              
@@ -84,7 +84,7 @@
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
-    
+    [picker dismissViewControllerAnimated:true completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
