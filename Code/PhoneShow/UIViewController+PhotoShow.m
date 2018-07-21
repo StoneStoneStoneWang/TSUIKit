@@ -26,8 +26,8 @@
                      appearanceProcess:^(JXTAlertController * _Nonnull alertMaker) {
                          alertMaker.
                          addActionCancelTitle(@"取消").
-                         addActionDestructiveTitle(@"相机").
-                         addActionCancelTitle(@"相册");
+                         addActionDefaultTitle(@"相机").
+                         addActionDefaultTitle(@"相册");
                      } actionsBlock:^(NSInteger buttonIndex, UIAlertAction * _Nonnull action, JXTAlertController * _Nonnull alertSelf) {
                          
                          __strong __typeof__(weakSelf) strongSelf = weakSelf;
