@@ -29,7 +29,7 @@
 //    [self.mj_header setValue:@(true) forKey:@"lastUpdatedTimeLabel.hidden"];
     
     //进入刷新状态
-    [head beginRefreshing];
+//    [head beginRefreshing];
     
     //上拉刷新
     self.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(onFooterRefresh)];

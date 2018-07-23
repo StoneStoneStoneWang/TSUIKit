@@ -14,7 +14,7 @@
 #import "TSBaseRefreshTableView.h"
 
 
-@interface NoNaviViewController ()
+@interface NoNaviViewController () <TSBaseRefreshTableViewDelegate >
 
 @property (nonatomic ,strong) TSBaseRefreshTableView *tableView;
 
@@ -46,29 +46,31 @@
     
     [self.tableView.mj_header beginRefreshing];
     
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//
-//    [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];
-//
-//    btn.frame = CGRectMake(50 , 50, 120, 40);
-//
-//    [btn setTitle:@"跳转" forState:UIControlStateNormal];
-//
-//    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//
-//    [self.view addSubview:btn];
-//
-//    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-//
-//    [btn1 addTarget:self action:@selector(gotoHasNavi1) forControlEvents:UIControlEventTouchUpInside];
-//
-//    btn1.frame = CGRectMake(50 , 150, 120, 40);
-//
-//    [btn1 setTitle:@"跳转" forState:UIControlStateNormal];
-//
-//    [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//
-//    [self.view addSubview:btn1];
+    self.tableView.mDelegate = self;
+    
+    //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    //
+    //    [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];
+    //
+    //    btn.frame = CGRectMake(50 , 50, 120, 40);
+    //
+    //    [btn setTitle:@"跳转" forState:UIControlStateNormal];
+    //
+    //    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    //
+    //    [self.view addSubview:btn];
+    //
+    //    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    //
+    //    [btn1 addTarget:self action:@selector(gotoHasNavi1) forControlEvents:UIControlEventTouchUpInside];
+    //
+    //    btn1.frame = CGRectMake(50 , 150, 120, 40);
+    //
+    //    [btn1 setTitle:@"跳转" forState:UIControlStateNormal];
+    //
+    //    [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    //
+    //    [self.view addSubview:btn1];
 }
 
 - (void)configOwnProperties {
@@ -76,7 +78,22 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 }
-
+- (void)onHeaderRefresh {
+    
+    [self performSelector:@selector(delay) withObject:nil afterDelay:2];
+}
+- (void)delay {
+    
+    [self.tableView.mj_header endRefreshing];
+}
+- (void)onFooterRefresh {
+    
+    
+}
+- (void)onTableView:(TSBaseTableView *)tableView forIndexPath:(NSIndexPath *)indexPath withData:(TSBaseTableBean *)data {
+    
+    
+}
 - (UIStatusBarStyle)preferredStatusBarStyle {
     
     return UIStatusBarStyleDefault;
@@ -86,24 +103,24 @@
     [[HUDUtil shared] showWithStatus:@"你好1"];
 }
 - (void)gotoHasNavi {
-
+    
     [[HUDUtil shared] showInfo:@"你好"];
     
-//    [[HUDUtil shared] showWithStatus:@"你好1"];
-//
-//    [[HUDUtil shared ] showActivity];
+    //    [[HUDUtil shared] showWithStatus:@"你好1"];
+    //
+    //    [[HUDUtil shared ] showActivity];
     
-//    TSInnerViewController *inner = [[TSInnerViewController alloc]init];
-//
-//    inner.zoomScale = false;
-//
-//    [inner loadReq:@"https://www.baidu.com"];
-//
-//    [self.navigationController pushViewController:inner animated:true];
+    //    TSInnerViewController *inner = [[TSInnerViewController alloc]init];
+    //
+    //    inner.zoomScale = false;
+    //
+    //    [inner loadReq:@"https://www.baidu.com"];
+    //
+    //    [self.navigationController pushViewController:inner animated:true];
     
-//    HasNaviViewController *vc = [HasNaviViewController new];
-//
-//    [self.navigationController pushViewController:vc animated:true];
+    //    HasNaviViewController *vc = [HasNaviViewController new];
+    //
+    //    [self.navigationController pushViewController:vc animated:true];
 }
 
 @end
