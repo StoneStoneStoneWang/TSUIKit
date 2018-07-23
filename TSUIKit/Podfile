@@ -12,4 +12,6 @@ target 'TSUIKit' do
 pod 'JXTAlertManager'
 
 pod 'SVProgressHUD'
+
+pod 'MJRefresh'
 end

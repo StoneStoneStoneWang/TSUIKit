@@ -11,6 +11,7 @@
 		6C0BF75820F34FA400E4466C /* HasNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BF75620F34FA400E4466C /* HasNaviViewController.m */; };
 		6C0BF75D20F3507A00E4466C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BF75B20F3507A00E4466C /* TableViewCell.m */; };
 		6C0BF75E20F3507A00E4466C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0BF75C20F3507A00E4466C /* TableViewCell.xib */; };
+		6C29B41A2105AB5200D23EDE /* TSBaseRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C29B4192105AB5200D23EDE /* TSBaseRefreshTableView.m */; };
 		6C4D033D20D0C72F0029AFAB /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033C20D0C72F0029AFAB /* UIViewController+Orientation.m */; };
 		6C4D034020D0C7620029AFAB /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D033F20D0C7620029AFAB /* UINavigationController+Orientation.m */; };
 		6C4D034320D0C7830029AFAB /* UITabBarController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D034220D0C7830029AFAB /* UITabBarController+Orientation.m */; };
@@ -82,6 +83,8 @@
 		6C0BF75A20F3507A00E4466C /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		6C0BF75B20F3507A00E4466C /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		6C0BF75C20F3507A00E4466C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		6C29B4182105AB5200D23EDE /* TSBaseRefreshTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseRefreshTableView.h; sourceTree = "<group>"; };
+		6C29B4192105AB5200D23EDE /* TSBaseRefreshTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseRefreshTableView.m; sourceTree = "<group>"; };
 		6C4D033B20D0C72F0029AFAB /* UIViewController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
 		6C4D033C20D0C72F0029AFAB /* UIViewController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Orientation.m"; sourceTree = "<group>"; };
 		6C4D033E20D0C7620029AFAB /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Orientation.h"; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 				6C639B0720F4358900BFBFE2 /* TSBaseTableView.m */,
 				6C813D7420F8352100C8FC13 /* TSBaseTableBean.h */,
 				6C813D7520F8352100C8FC13 /* TSBaseTableBean.m */,
+				6C29B4182105AB5200D23EDE /* TSBaseRefreshTableView.h */,
+				6C29B4192105AB5200D23EDE /* TSBaseRefreshTableView.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -673,11 +678,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXTAlertManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,6 +710,7 @@
 				6CE1244C20EA060400D15132 /* NoNaviViewController.m in Sources */,
 				6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */,
 				6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */,
+				6C29B41A2105AB5200D23EDE /* TSBaseRefreshTableView.m in Sources */,
 				6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */,
 				6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6C813D7620F8352100C8FC13 /* TSBaseTableBean.m in Sources */,

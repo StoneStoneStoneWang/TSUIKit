@@ -10,7 +10,13 @@
 #import "HasNaviViewController.h"
 #import "TSInnerViewController.h"
 #import "HUDUtil.h"
+
+#import "TSBaseRefreshTableView.h"
+
+
 @interface NoNaviViewController ()
+
+@property (nonatomic ,strong) TSBaseRefreshTableView *tableView;
 
 @end
 
@@ -22,37 +28,47 @@
     [self.navigationController setNavigationBarHidden:true];
     
 }
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (TSBaseRefreshTableView *)tableView {
     
-    
+    if (!_tableView) {
+        
+        _tableView = [TSBaseRefreshTableView getInstance_t];
+    }
+    return _tableView;
 }
-
+- (void)addOwnSubviews {
+    
+    [self.view addSubview:self.tableView];
+}
 - (void)configOwnSubviews {
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.tableView.frame = self.view.bounds;
     
-    [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];
+    [self.tableView.mj_header beginRefreshing];
     
-    btn.frame = CGRectMake(50 , 50, 120, 40);
-    
-    [btn setTitle:@"跳转" forState:UIControlStateNormal];
-    
-    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    
-    [self.view addSubview:btn];
-    
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    [btn1 addTarget:self action:@selector(gotoHasNavi1) forControlEvents:UIControlEventTouchUpInside];
-    
-    btn1.frame = CGRectMake(50 , 150, 120, 40);
-    
-    [btn1 setTitle:@"跳转" forState:UIControlStateNormal];
-    
-    [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    
-    [self.view addSubview:btn1];
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//
+//    [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];
+//
+//    btn.frame = CGRectMake(50 , 50, 120, 40);
+//
+//    [btn setTitle:@"跳转" forState:UIControlStateNormal];
+//
+//    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//
+//    [self.view addSubview:btn];
+//
+//    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+//
+//    [btn1 addTarget:self action:@selector(gotoHasNavi1) forControlEvents:UIControlEventTouchUpInside];
+//
+//    btn1.frame = CGRectMake(50 , 150, 120, 40);
+//
+//    [btn1 setTitle:@"跳转" forState:UIControlStateNormal];
+//
+//    [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//
+//    [self.view addSubview:btn1];
 }
 
 - (void)configOwnProperties {

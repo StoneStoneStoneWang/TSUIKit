@@ -26,7 +26,7 @@ static HUDUtil *manager = nil;
     
     [SVProgressHUD setDefaultStyle:(SVProgressHUDStyleDark)];
     
-    [SVProgressHUD setMinimumDismissTimeInterval:2];
+    [SVProgressHUD setMinimumDismissTimeInterval:1.0];
     
     [SVProgressHUD setDefaultAnimationType:(SVProgressHUDAnimationTypeFlat)];
     
