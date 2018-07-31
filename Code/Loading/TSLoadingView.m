@@ -88,6 +88,13 @@
             
         }
             break;
+        case LoadingStatusWebViewLoading:
+        {
+            CGRect frame = self.frame;
+            
+            self.frame = CGRectMake(0, 2, frame.size.width, frame.size.height);
+        }
+            break;
         case LoadingStatusSucc:
         {
             
@@ -117,21 +124,9 @@
     
     CGFloat h = CGRectGetHeight(self.contentViewController.view.bounds);
     
-    //    if (self.contentViewController.navigationController) {
-    //
-    //        if (self.contentViewController.navigationController.navigationBar.isTranslucent) {
-    //
-    //            self.frame = CGRectMake(0, 0, w, h - 64);
-    //        } else {
-    //
-    //            self.frame = CGRectMake(0, 64, w, h - 64);
-    //        }
-    //    } else {
-    //
-    //        self.frame = self.contentViewController.view.bounds;
-    //    }
+    CGRect frame = self.contentViewController.view.bounds;
     
-    self.frame = self.contentViewController.view.bounds;
+    self.frame = frame;
     
     [self.contentViewController.view bringSubviewToFront:self];
     

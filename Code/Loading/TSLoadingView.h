@@ -12,6 +12,8 @@ typedef NS_ENUM(NSInteger,LoadingStatus) {
     
     LoadingStatusBegin,
     
+    LoadingStatusWebViewLoading,
+    
     LoadingStatusLoading,
     
     LoadingStatusSucc,

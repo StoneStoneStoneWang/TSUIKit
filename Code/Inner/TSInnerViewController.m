@@ -47,7 +47,13 @@
     }
     return _progressView;
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.loadingStatus = LoadingStatusWebViewLoading;
+}
 - (void)addOwnSubviews {
+    [super addOwnSubviews];
     
     [self.view addSubview:self.webView];
     
@@ -92,10 +98,14 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     
     self.progressView.hidden = true;
+    
+    self.loadingStatus = LoadingStatusSucc;
 }
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     
     self.progressView.hidden = true;
+    
+    self.loadingStatus = LoadingStatusFail;
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
