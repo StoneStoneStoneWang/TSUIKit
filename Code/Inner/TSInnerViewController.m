@@ -7,7 +7,7 @@
 //
 
 #import "TSInnerViewController.h"
-
+#import "TSColorCommon.h"
 @interface TSInnerViewController ()<WKNavigationDelegate,WKScriptMessageHandler>
 
 @property (nonatomic ,strong ,readwrite) WKWebView *webView;
@@ -43,6 +43,10 @@
         
         _progressView = [[UIProgressView alloc]init];
         
+        _progressView.trackTintColor = SEPERATOR_COLOR;
+        
+        _progressView.progressTintColor = TAB_SELECT_COLOR;
+        
         _progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
     }
     return _progressView;
@@ -69,7 +73,7 @@
     
     [self.webView addObserver:self forKeyPath:@"scrollView.contentSize" options:(NSKeyValueObservingOptionNew) context:nil];
     
-    self.progressView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 2);
+    self.progressView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), 2);
 }
 - (void)loadReq:(NSString *)url {
     
