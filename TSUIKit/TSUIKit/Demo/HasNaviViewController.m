@@ -8,6 +8,7 @@
 
 #import "HasNaviViewController.h"
 #import "XibViewController.h"
+
 @interface HasNaviViewController ()
 
 @end
@@ -23,8 +24,13 @@
     self.loadingStatus = LoadingStatusBegin;
     
     self.loadingStatus = LoadingStatusLoading;
+    
+    self.loadingStatus = LoadingStatusSucc;
 }
-
+- (void)configNaviItem {
+    
+    self.title = @"有导航";
+}
 - (void)configOwnSubviews {
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -51,9 +57,9 @@
     
     [self.view addSubview:btn1];
     
-    [self performSelector:@selector(delay_test) withObject:nil afterDelay:3];
-    
-    [self performSelector:@selector(delay_test1) withObject:nil afterDelay:6];
+    //    [self performSelector:@selector(delay_test) withObject:nil afterDelay:3];
+    //
+    //    [self performSelector:@selector(delay_test1) withObject:nil afterDelay:6];
 }
 
 - (void)delay_test {
@@ -63,16 +69,14 @@
 
 - (void)delay_test1 {
     
-//    self.loadingStatus = LoadingStatusSucc;
+    //    self.loadingStatus = LoadingStatusSucc;
 }
 
 - (void)goPush {
     
-    XibViewController *xib = [XibViewController new];
+    HasNaviViewController *has = [HasNaviViewController new];
     
-//    HasNaviViewController *has = [HasNaviViewController new];
-    
-    [self.navigationController pushViewController:xib animated:true];
+    [self.navigationController pushViewController:has animated:true];
 }
 - (void)onSelect:(id)data forIndexPath:(NSIndexPath *)indexPath {
     

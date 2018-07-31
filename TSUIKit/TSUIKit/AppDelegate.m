@@ -11,8 +11,11 @@
 #import "NoNaviViewController.h"
 #import "TSNavigationController.h"
 #import "HUDUtil.h"
+#import <LGSideMenuController/LGSideMenuController.h>
+#import "TSDrawerViewController.h"
 @interface AppDelegate ()
 
+@property (nonatomic ,strong ,readwrite) TSDrawerViewController *leftVC;
 @end
 
 @implementation AppDelegate
@@ -21,13 +24,24 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-//    self.window.rootViewController =  [[TSNavigationController alloc] initWithRootViewController:[NoNaviViewController new]] ;
+    TSDrawerViewController * leftDrawer = [[TSDrawerViewController alloc] init];
     
-    self.window.rootViewController = [MainViewController new];
+    MainViewController * main = [MainViewController new];
+    
+    self.leftVC = leftDrawer;
+    
+    LGSideMenuController * drawerController = [LGSideMenuController sideMenuControllerWithRootViewController:main leftViewController:leftDrawer rightViewController:nil];
+    
+    drawerController.leftViewWidth = 250.0;
+    
+    drawerController.leftViewPresentationStyle = LGSideMenuPresentationStyleSlideAbove;
+    
+    self.window.rootViewController = drawerController;
     
     [self.window makeKeyAndVisible];
     
     [[HUDUtil shared] configHud];
+    
     return YES;
 }
 

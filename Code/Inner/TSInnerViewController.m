@@ -55,7 +55,7 @@
 }
 - (void)configOwnSubviews {
     
-    self.webView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    self.webView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - 64);
     
     self.webView.navigationDelegate = self;
     
@@ -124,7 +124,7 @@
         
         if (![self.webView isLoading]) {
             
-            self.webView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+            self.webView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - 64);
             
             [self.webView sizeToFit];
         }

@@ -14,4 +14,8 @@ pod 'JXTAlertManager'
 pod 'SVProgressHUD'
 
 pod 'MJRefresh'
+
+#pod 'MMDrawerController', '~> 0.5.7'
+
+pod 'LGSideMenuController'
 end

@@ -17,6 +17,8 @@
     
     UIViewController * fromVc   = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
+    NSLog(@"push fromVc===>>>%@",fromVc);
+    
     if (fromVc.tabBarController) {
         
         [self pushWithTabbarSnapShot:transitionContext];
@@ -29,6 +31,8 @@
 - (void)pop:(id<UIViewControllerContextTransitioning>)transitionContext {
     
     UIViewController * fromVc   = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    
+    NSLog(@"pop fromVc===>>>%@",fromVc);
     
     if (fromVc.tabBarController) {
         

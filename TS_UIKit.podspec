@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "TS_UIKit"
-s.version      = "1.4.2"
+s.version      = "1.4.3"
 s.summary      = "A Lib For UI."
 s.description  = <<-DESC
 TSUIKit 是一个UI基类 新增push and pop 转场 新增loadingvc

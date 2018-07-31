@@ -8,6 +8,13 @@
 
 #import "VideoViewController.h"
 #import "VideoBroadViewController.h"
+#import "UIBarButtonItem+Setting.h"
+#import <LGSideMenuController/LGSideMenuController.h>
+
+#import <LGSideMenuController/UIViewController+LGSideMenuController.h>
+#import "HasNaviViewController.h"
+#import "AppDelegate.h"
+#import "UIViewController+ADDProperty.h"
 @interface VideoViewController ()
 
 @end
@@ -39,12 +46,31 @@
     
     [self.view addSubview:btn];
 }
+- (void)configNaviItem {
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"抽屉" andHighTitle:@"抽屉" andFontSize:15 andTarget:self andSelector:@selector(openDrawer)];
+}
+
+- (void)openDrawer {
+    
+    [[self sideMenuController] showLeftViewAnimated:true completionHandler:nil];
+}
 
 - (void)gotoVideo {
     
-    VideoBroadViewController *broad = [VideoBroadViewController new];
     
-    [self.navigationController pushViewController:broad animated:true];
+//
+//    [self.navigationController pushViewController:broad animated:true];
+    
+    
+    
+//    leftVC.dataBlock = ^(id d, id a, id c) {
+//
+//        VideoBroadViewController *broad = [VideoBroadViewController new];
+//
+//        [self.navigationController pushViewController: broad animated:true];
+//    };
+    
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
     

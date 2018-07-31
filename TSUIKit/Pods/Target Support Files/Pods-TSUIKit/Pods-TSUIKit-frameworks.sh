@@ -103,11 +103,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
 fi

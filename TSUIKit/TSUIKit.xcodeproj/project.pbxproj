@@ -28,6 +28,8 @@
 		6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C813D4F20F7ACA100C8FC13 /* UITabBarController+AddChild.m */; };
 		6C813D7320F8329700C8FC13 /* TSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C813D7220F8329700C8FC13 /* TSBaseTableViewCell.m */; };
 		6C813D7620F8352100C8FC13 /* TSBaseTableBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C813D7520F8352100C8FC13 /* TSBaseTableBean.m */; };
+		6C945A8021082A70007D2787 /* TSDrawerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C945A7F21082A70007D2787 /* TSDrawerAnimation.m */; };
+		6C945A8321084506007D2787 /* TSDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C945A8221084506007D2787 /* TSDrawerViewController.m */; };
 		6C9B3A5320E47221006A10B2 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B3A5220E47221006A10B2 /* TSNavigationController.m */; };
 		6CA172CC20D0C38900F2F339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CB20D0C38900F2F339 /* AppDelegate.m */; };
 		6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA172CE20D0C38900F2F339 /* ViewController.m */; };
@@ -120,6 +122,10 @@
 		6C813D7220F8329700C8FC13 /* TSBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableViewCell.m; sourceTree = "<group>"; };
 		6C813D7420F8352100C8FC13 /* TSBaseTableBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseTableBean.h; sourceTree = "<group>"; };
 		6C813D7520F8352100C8FC13 /* TSBaseTableBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableBean.m; sourceTree = "<group>"; };
+		6C945A7E21082A70007D2787 /* TSDrawerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDrawerAnimation.h; sourceTree = "<group>"; };
+		6C945A7F21082A70007D2787 /* TSDrawerAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDrawerAnimation.m; sourceTree = "<group>"; };
+		6C945A8121084506007D2787 /* TSDrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDrawerViewController.h; sourceTree = "<group>"; };
+		6C945A8221084506007D2787 /* TSDrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDrawerViewController.m; sourceTree = "<group>"; };
 		6C9B3A5120E47221006A10B2 /* TSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
 		6C9B3A5220E47221006A10B2 /* TSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 		6CA172C720D0C38900F2F339 /* TSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -435,6 +441,8 @@
 				6CE1243720EA042F00D15132 /* TSBaseAnimation.m */,
 				6CE1243820EA042F00D15132 /* TSNaviAnimation.h */,
 				6CE1243920EA042F00D15132 /* TSNaviAnimation.m */,
+				6C945A7E21082A70007D2787 /* TSDrawerAnimation.h */,
+				6C945A7F21082A70007D2787 /* TSDrawerAnimation.m */,
 				6CE1243C20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.h */,
 				6CE1243D20EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m */,
 			);
@@ -447,6 +455,8 @@
 				6CCD009820F76280008E3E23 /* Circle */,
 				6C0BF75520F34FA400E4466C /* HasNaviViewController.h */,
 				6C0BF75620F34FA400E4466C /* HasNaviViewController.m */,
+				6C945A8121084506007D2787 /* TSDrawerViewController.h */,
+				6C945A8221084506007D2787 /* TSDrawerViewController.m */,
 				6CCD008D20F73FA9008E3E23 /* XibViewController.h */,
 				6CCD008E20F73FA9008E3E23 /* XibViewController.m */,
 				6CCD008F20F73FA9008E3E23 /* XibViewController.xib */,
@@ -678,12 +688,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSUIKit/Pods-TSUIKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JXTAlertManager/JXTAlertManager.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXTAlertManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
@@ -711,10 +723,12 @@
 				6C813D5020F7ACA100C8FC13 /* UITabBarController+AddChild.m in Sources */,
 				6CE1244D20EA060400D15132 /* VideoBroadViewController.m in Sources */,
 				6C29B41A2105AB5200D23EDE /* TSBaseRefreshTableView.m in Sources */,
+				6C945A8321084506007D2787 /* TSDrawerViewController.m in Sources */,
 				6C639B0820F4358900BFBFE2 /* TSBaseTableView.m in Sources */,
 				6CE1244120EA042F00D15132 /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
 				6C813D7620F8352100C8FC13 /* TSBaseTableBean.m in Sources */,
 				6CA172CF20D0C38900F2F339 /* ViewController.m in Sources */,
+				6C945A8021082A70007D2787 /* TSDrawerAnimation.m in Sources */,
 				6C4E93CF20FF308A00B0BCBE /* TSBaseTransition.m in Sources */,
 				6CA172DA20D0C38900F2F339 /* main.m in Sources */,
 				6CE1243E20EA042F00D15132 /* TSBaseAnimation.m in Sources */,

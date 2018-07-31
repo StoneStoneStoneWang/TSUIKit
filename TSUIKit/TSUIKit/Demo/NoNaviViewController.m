@@ -42,35 +42,35 @@
 }
 - (void)configOwnSubviews {
     
-    self.tableView.frame = self.view.bounds;
+//    self.tableView.frame = self.view.bounds;
+//
+//    [self.tableView.mj_header beginRefreshing];
+//
+//    self.tableView.mDelegate = self;
     
-    [self.tableView.mj_header beginRefreshing];
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    self.tableView.mDelegate = self;
+        [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];
     
-    //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    //
-    //    [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];
-    //
-    //    btn.frame = CGRectMake(50 , 50, 120, 40);
-    //
-    //    [btn setTitle:@"跳转" forState:UIControlStateNormal];
-    //
-    //    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    //
-    //    [self.view addSubview:btn];
-    //
-    //    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    //
-    //    [btn1 addTarget:self action:@selector(gotoHasNavi1) forControlEvents:UIControlEventTouchUpInside];
-    //
-    //    btn1.frame = CGRectMake(50 , 150, 120, 40);
-    //
-    //    [btn1 setTitle:@"跳转" forState:UIControlStateNormal];
-    //
-    //    [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    //
-    //    [self.view addSubview:btn1];
+        btn.frame = CGRectMake(50 , 50, 120, 40);
+    
+        [btn setTitle:@"跳转" forState:UIControlStateNormal];
+    
+        [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+        [self.view addSubview:btn];
+    
+        UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+        [btn1 addTarget:self action:@selector(gotoHasNavi1) forControlEvents:UIControlEventTouchUpInside];
+    
+        btn1.frame = CGRectMake(50 , 150, 120, 40);
+    
+        [btn1 setTitle:@"跳转" forState:UIControlStateNormal];
+    
+        [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+        [self.view addSubview:btn1];
 }
 
 - (void)configOwnProperties {
@@ -100,7 +100,7 @@
 }
 - (void)gotoHasNavi1 {
     
-    [[HUDUtil shared] showWithStatus:@"你好1"];
+//    [[HUDUtil shared] showWithStatus:@"你好1"];
 }
 - (void)gotoHasNavi {
     
@@ -118,9 +118,9 @@
     //
     //    [self.navigationController pushViewController:inner animated:true];
     
-    //    HasNaviViewController *vc = [HasNaviViewController new];
-    //
-    //    [self.navigationController pushViewController:vc animated:true];
+        HasNaviViewController *vc = [HasNaviViewController new];
+    
+        [self.navigationController pushViewController:vc animated:true];
 }
 
 @end

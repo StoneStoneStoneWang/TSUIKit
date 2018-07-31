@@ -14,6 +14,22 @@
 @end
 
 @implementation TSBaseViewController
+{
+    UIImageView *_navBarHairlineImageView;
+}
+
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
+}
 - (UIWebView *)phoneWebView {
     
     if (!_phoneWebView) {
@@ -27,10 +43,10 @@
     
 #pragma mark ---- 如果不是通过xib加载的 取消 第一个检查器 use trait variations勾选
     
-    //    if (self.navigationController ) {
-    //
-    //        self.navigationController.navigationBar.translucent = false;
-    //    }
+        if (self.navigationController ) {
+    
+            _navBarHairlineImageView.hidden = true;
+        }
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
@@ -73,6 +89,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _navBarHairlineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
     
     [self addOwnSubviews];
     
