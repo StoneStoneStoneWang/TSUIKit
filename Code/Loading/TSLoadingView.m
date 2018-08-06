@@ -27,6 +27,7 @@
     
     return image;
 }
+
 @end
 
 @interface TSLoadingView()
@@ -38,11 +39,16 @@
     UIImageView *_iconImageView;
     
     UILabel *_reloadLabel;
+    
+    NSString *_text;
+    
+    NSString *_logo;
 }
 
 @property (nonatomic ,strong) TSBaseViewController *contentViewController;
 
 @property (nonatomic ,assign ,readwrite) BOOL isLoading;
+
 @end
 @implementation TSLoadingView
 
@@ -73,6 +79,20 @@
     }
     return self;
 }
+- (void)setURLCannotOpenforText:(NSString *)text andLogo:(NSString *)logo {
+    
+    _reloadLabel.text = text;
+    
+    _iconImageView.image = [UIImage imageNamed:logo];
+}
+
+- (void)setDataEmptyforText:(NSString *)text andLogo:(NSString *)logo {
+    
+    _reloadLabel.text = text;
+    
+    _iconImageView.image = [UIImage imageNamed:logo];
+}
+
 - (void)setStatus:(LoadingStatus)status {
     _status = status;
     
@@ -111,6 +131,17 @@
         {
             
             [self onFail];
+        }
+            break;
+        case LoadingStatusURLCannotOpen:
+        {
+            
+            [self onURLNotOpen];
+        }
+            break;
+        case LoadingStatusDataEmpty:
+        {
+            
         }
             break;
         default:
@@ -166,7 +197,6 @@
         
         [_mDelegate onReloadItemClick];
     }
-    
 }
 - (void)onLoading {
     
@@ -204,8 +234,49 @@
     _reloadLabel.hidden = false;
     
     _backgroundItem.hidden = false;
+    
+    _reloadLabel.text = @"点击屏幕 重新加载";
+    
+    _reloadLabel.textColor = [UIColor colorWithRed: 0x66 / 255.0f green:0x66 / 255.0f blue:0x66 / 255.0f alpha:1];
+    
+    _reloadLabel.font = [UIFont systemFontOfSize:20];
 }
 
+- (void)onURLNotOpen {
+    
+    if (!_activity.isAnimating) {
+        
+        [_activity stopAnimating];
+    }
+    
+    _activity.hidden = true;
+    
+    _reloadLabel.hidden = false;
+    
+    _reloadLabel.text = _text;
+    
+    _reloadLabel.textColor = [UIColor colorWithRed: 0x66 / 255.0f green:0x66 / 255.0f blue:0x66 / 255.0f alpha:1];
+    
+    _reloadLabel.font = [UIFont systemFontOfSize:15];
+}
+
+- (void)onDataEmpty {
+    
+    if (!_activity.isAnimating) {
+        
+        [_activity stopAnimating];
+    }
+    
+    _activity.hidden = true;
+    
+    _reloadLabel.hidden = false;
+    
+    _reloadLabel.text = _text;
+    
+    _reloadLabel.textColor = [UIColor colorWithRed: 0x66 / 255.0f green:0x66 / 255.0f blue:0x66 / 255.0f alpha:1];
+    
+    _reloadLabel.font = [UIFont systemFontOfSize:15];
+}
 - (void)onReload {
     
     [self onLoading];

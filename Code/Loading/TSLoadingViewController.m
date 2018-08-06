@@ -52,4 +52,14 @@
     
     [self prepareData];
 }
+
+- (void)setURLCannotOpenforText:(NSString *)text andLogo:(NSString *)logo {
+    
+    [self.loadingView setURLCannotOpenforText:text andLogo:logo];
+}
+
+- (void)setDataEmptyforText:(NSString *)text andLogo:(NSString *)logo {
+    
+    [self.loadingView setDataEmptyforText:text andLogo:logo];
+}
 @end

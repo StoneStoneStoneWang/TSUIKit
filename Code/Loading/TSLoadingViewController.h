@@ -17,4 +17,7 @@
 // 重新加载
 - (void)onReloadItemClick;
 
+- (void)setURLCannotOpenforText:(NSString *)text andLogo:(NSString *)logo;
+
+- (void)setDataEmptyforText:(NSString *)text andLogo:(NSString *)logo;
 @end

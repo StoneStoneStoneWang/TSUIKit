@@ -18,12 +18,6 @@
 
 - (void)configOwnSubviews {
     
-    //    self.tableView.frame = self.view.bounds;
-    //
-    //    [self.tableView.mj_header beginRefreshing];
-    //
-    //    self.tableView.mDelegate = self;
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     [btn addTarget:self action:@selector(gotoHasNavi) forControlEvents:UIControlEventTouchUpInside];

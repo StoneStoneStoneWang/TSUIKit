@@ -20,7 +20,11 @@ typedef NS_ENUM(NSInteger,LoadingStatus) {
     
     LoadingStatusFail,
     
-    LoadingStatusReload
+    LoadingStatusReload,
+    
+    LoadingStatusURLCannotOpen,
+    
+    LoadingStatusDataEmpty
 };
 
 @protocol TSLoadingViewDelegate <NSObject>
@@ -48,4 +52,10 @@ typedef NS_ENUM(NSInteger,LoadingStatus) {
 - (void)changeLoadingStatus:(LoadingStatus )status;
 
 @property (nonatomic ,weak) id<TSLoadingViewDelegate> mDelegate;
+
+- (void)setURLCannotOpenforText:(NSString *)text andLogo:(NSString *)logo;
+
+- (void)setDataEmptyforText:(NSString *)text andLogo:(NSString *)logo;
+
+
 @end

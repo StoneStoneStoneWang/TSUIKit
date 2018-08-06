@@ -77,9 +77,18 @@
 }
 - (void)loadReq:(NSString *)url {
     
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURL *reqUrl = [NSURL URLWithString:url];
     
-    [self.webView loadRequest:req];
+    if ([[UIApplication sharedApplication] canOpenURL:reqUrl]) {
+        
+        NSURLRequest *req = [NSURLRequest requestWithURL:reqUrl];
+        
+        [self.webView loadRequest:req];
+    } else {
+        
+        
+        
+    }
 }
 - (void)loadHtml:(NSString *)html {
     
